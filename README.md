@@ -11,12 +11,12 @@ Starting with one category: skincare, makeup, haircare, or food. App used for in
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:Lifestyle/Wellness**
+- **Mobile: iOS focused**
+- **Story: Users are able to learn about the ingredients in their product and find a cleaner alternative**
+- **Market: Users looking to live a cleaner life **
+- **Habit: Users are expected to be active abt 3x a week **
+- **Scope: Skincare and possibly expand to makeup, haircare, and food**
 
 ## Product Spec
 
