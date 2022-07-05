@@ -22,17 +22,17 @@ My app is going to focus on skincare, and potentially branch out to different ca
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
+* Home feed that displays trending products based on user upvotes and articles
 * Skincare tab where users can choose a type of product, filter out multiple ingredients, and view the most popular products that are in line with the slected filters based on user upvote. Users can upvote, downvote, bookmark, and review a certain product. 
 * Each product would have seperate page where users can see the full ingredient list, product image, and community insight.
 * Learn more about the filter. Each filter would have a page dedicated with an explanation about why it is even an option to filter out. Scientific research would be provided to explain why the ingredient is harmful to an individual
 * Account page where users can look at their bookmarked products and logout
+* * Having the amazon link to buy the products
+
 
 **Optional Nice-to-have Stories**
 
-* Home feed that displays trending products based on user upvotes and articles
 * Expanding the scope of my project by creating a tab for haircare, makeup, and food
-* Having the amazon link to buy the products
 
 ### 2. Screen Archetypes
 
