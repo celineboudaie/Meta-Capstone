@@ -7,15 +7,14 @@
 
 ## Overview
 ### Description
-Starting with one category: skincare, makeup, haircare, or food. App used for individuals to find clean products and filter out ingredients that are potentially causing harm to their body. The application is meant for users to learn more about the issues with certain ingredients in their products and find replacements for their favorite produvts. One page of the app will be dedicated to providing scientific research about why a certain ingredient is harmful to the body. Users are able to filter out ingredients after learning about their harm and their feed for a certain product will be populated with the product with the most upvotes. Users can upvote, downvote, comment, and save products they are interested in purchasing or researching further. 
+My app is going to focus on skincare, and potentially branch out to different categories such as makeup, haircare, or food. The app is meant for individuals to find clean products and filter out ingredients that are potentially causing harm to their body. The application is meant for users to learn more about the issues with certain ingredients in their products and find replacements for their favorite products. One page of the app will be dedicated to providing scientific research about why a certain ingredient is harmful to the body. Users are able to filter out ingredients after learning about their harm and their feed for a certain product type will be populated with the product with the most upvotes. Users can upvote, downvote, comment, and save products they are interested in purchasing or researching further. 
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:Lifestyle/Wellness**
 - **Mobile: iOS focused**
 - **Story: Users are able to learn about the ingredients in their product and find a cleaner alternative**
 - **Market: Users looking to live a cleaner life **
-- **Habit: Users are expected to be active abt 3x a week **
+- **Habit: Users are expected to be active abt 3x a week. Users can post, upvote, and downvote products after trying them. Look at trending products and for replacements. Also, they will use the app whenever they are interested in learning about new ingredients and why they are harmful to their body.**
 - **Scope: Skincare and possibly expand to makeup, haircare, and food**
 
 ## Product Spec
@@ -24,13 +23,16 @@ Starting with one category: skincare, makeup, haircare, or food. App used for in
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Skincare tab where users can choose a type of product, filter out multiple ingredients, and view the most popular products that are in line with the slected filters based on user upvote. Users can upvote, downvote, bookmark, and review a certain product. 
+* Each product would have seperate page where users can see the full ingredient list, product image, and community insight.
+* Learn more about the filter. Each filter would have a page dedicated with an explanation about why it is even an option to filter out. Scientific research would be provided to explain why the ingredient is harmful to an individual
+* Account page where users can look at their bookmarked products and logout
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Home feed that displays trending products based on user upvotes and articles
+* Expanding the scope of my project by creating a tab for haircare, makeup, and food
+* Having the amazon link to buy the products
 
 ### 2. Screen Archetypes
 
@@ -50,21 +52,17 @@ Starting with one category: skincare, makeup, haircare, or food. App used for in
 * [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
-
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+Login/Sign Up Page 
+Home Feed
+* Skincare Page
+   * Details page for each product
+   
+* Learn more about filter options
+   * Details page for each filter with scientific research
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=sharing
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
