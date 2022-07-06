@@ -77,13 +77,13 @@ https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=shari
 
 ### Networking
 Home Feed
-* (Update/PUT) Display trending product based on x amount of upvotes or bookamrks
-*(Update/PUT) Display trending articles about filters based on x amount of clicks
+* (Update/GET) Display trending product based on x amount of upvotes or bookamrks
+* (Update/GET) Display trending articles about filters based on x amount of clicks
 
 Skincare Tab
-*(GET) All products (from API) that adhere to applied filters
+* (GET) All products (from API) that adhere to applied filters
 * (Create/Post) Comment about certain product
-* (Update/PUT) change placement of products on skincare tab based on upvote, downvote 
+* (GET) change placement of products on skincare tab based on upvote, downvote 
 
 Account Info
 * (Update) Saved products if user bookmarks a product on skincare tab
