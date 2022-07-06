@@ -46,10 +46,11 @@ My app is going to focus on skincare, and potentially branch out to different ca
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Sign In/Sign Up
+* Home Feed
+* Skincare
+* Learn more about filters
+* Account Info
 
 **Flow Navigation** (Screen to Screen)
 Login/Sign Up Page 
@@ -59,6 +60,10 @@ Home Feed
    
 * Learn more about filter options
    * Details page for each filter with scientific research
+   
+* Account Information
+  * Saved products
+    * Page filled with cells of all the users saved products
 
 ## Wireframes
 https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=sharing
@@ -66,9 +71,20 @@ https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=shari
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
 [Add table of models]
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+Home Feed
+* (Update/PUT) Display trending product based on x amount of upvotes or bookamrks
+*(Update/PUT) Display trending articles about filters based on x amount of clicks
+
+Skincare Tab
+*(GET) All products (from API) that adhere to applied filters
+* (Create/Post) Comment about certain product
+* (Update/PUT) change placement of products on skincare tab based on upvote, downvote 
+
+Account Info
+* (Update) Saved products if user bookmarks a product on skincare tab
+* (READ/GET) Query logged in user object
