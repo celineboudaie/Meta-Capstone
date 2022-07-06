@@ -78,7 +78,6 @@ https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=shari
 
 
 ## Schema 
-[This section will be completed in Unit 9]
 
 ### Models
 [Add table of models]
