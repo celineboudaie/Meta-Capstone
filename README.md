@@ -36,13 +36,21 @@ My app is going to focus on skincare, and potentially branch out to different ca
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
-
+* Login in/Sign Up
+   * Upon opening the app, the user is prompted to sign up or login to the app so that the data associated with their account can be stored to their user info
+* Home Feed
+   * Upon selecting this view, the user will be able to view trending products and articles about filters based on x amount of saves and clicks
+* Skincare
+  * User can choose the type of skincare product they are interested in and then one to multiple filters to exclude certain ingredients
+  * Upon slecting the filters, the users screen will be filled with cells of products that adhere to all the filters and the topmost cell will be filled with the product with the most upvotes
+  * Upon clicking on the cell the user will be redirected to a details view page that will have the associated amazon link to purchase the item, an image of the product, ingredients, and community insight about the product
+* Learn More About Filter 
+  * Users will be able to view and click on a cell for each filter
+  * Upon clicking on the cell the user will be prompted to a new details view controller with scientific research and data about what makes the ingredient "bad"
+* Account Info
+  * User can click on the saved products tab to view a collection of cells of products they bookmarked on the skincare tab
+  * User can click logout to be redirected to the sign in/sign up page
+  
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
