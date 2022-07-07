@@ -13,7 +13,7 @@ My app is going to focus on skincare, and potentially branch out to different ca
 - **Category:Lifestyle/Wellness**
 - **Mobile: iOS focused**
 - **Story: Users are able to learn about the ingredients in their product and find a cleaner alternative**
-- **Market: Users looking to live a cleaner life **
+- **Market: Users looking to live a cleaner life**
 - **Habit: Users are expected to be active abt 3x a week. Users can post, upvote, and downvote products after trying them. Look at trending products and for replacements. Also, they will use the app whenever they are interested in learning about new ingredients and why they are harmful to their body.**
 - **Scope: Skincare and possibly expand to makeup, haircare, and food**
 
