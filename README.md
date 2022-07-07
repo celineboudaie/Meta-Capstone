@@ -80,8 +80,13 @@ https://drive.google.com/file/d/1DohTwRbSM5bLqqoOESDHS7VT9IPyPe3n/view?usp=shari
 ## Schema 
 
 ### Models
-[Add table of models]
-
+| Property | Type | Description |
+| :---         |     :---:      |          ---: |
+| objectId   | String     | unique id for the user post  |
+| upvote count     | Number | number of upvotes associated with a certain product id      |
+| downvote count   | Number     | number of downvotes associated with a certain product id    |
+| review   | String     | connected to the user id and displays the users username when a productreview is posted    |
+| bookmark   | string     | stores cells that user bookmarked for certain products and articles    |
 
 ### Networking
 Home Feed
