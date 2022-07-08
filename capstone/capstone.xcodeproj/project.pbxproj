@@ -17,6 +17,11 @@
 		728E4F322875F71400B52388 /* capstoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F312875F71400B52388 /* capstoneTests.m */; };
 		728E4F3C2875F71400B52388 /* capstoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F3B2875F71400B52388 /* capstoneUITests.m */; };
 		728E4F3E2875F71400B52388 /* capstoneUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F3D2875F71400B52388 /* capstoneUITestsLaunchTests.m */; };
+		728E4F4C2878B22500B52388 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F4B2878B22500B52388 /* ProductCell.m */; };
+		728E4F4F2878B4EA00B52388 /* SkincareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F4E2878B4EA00B52388 /* SkincareViewController.m */; };
+		728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F552878D84C00B52388 /* FiltersViewController.m */; };
+		728E4F592878D86C00B52388 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F582878D86C00B52388 /* AccountViewController.m */; };
+		728E4F5C2878D89300B52388 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F5B2878D89300B52388 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		728E4F372875F71400B52388 /* capstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = capstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E4F3B2875F71400B52388 /* capstoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstoneUITests.m; sourceTree = "<group>"; };
 		728E4F3D2875F71400B52388 /* capstoneUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capstoneUITestsLaunchTests.m; sourceTree = "<group>"; };
+		728E4F4A2878B22500B52388 /* ProductCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		728E4F4B2878B22500B52388 /* ProductCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		728E4F4D2878B4EA00B52388 /* SkincareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkincareViewController.h; sourceTree = "<group>"; };
+		728E4F4E2878B4EA00B52388 /* SkincareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkincareViewController.m; sourceTree = "<group>"; };
+		728E4F542878D84C00B52388 /* FiltersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		728E4F552878D84C00B52388 /* FiltersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		728E4F572878D86C00B52388 /* AccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		728E4F582878D86C00B52388 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		728E4F5A2878D89300B52388 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		728E4F5B2878D89300B52388 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +119,9 @@
 		728E4F142875F71200B52388 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
-				728E4F152875F71200B52388 /* AppDelegate.h */,
-				728E4F162875F71200B52388 /* AppDelegate.m */,
-				728E4F182875F71200B52388 /* SceneDelegate.h */,
-				728E4F192875F71200B52388 /* SceneDelegate.m */,
-				728E4F1B2875F71200B52388 /* ViewController.h */,
-				728E4F1C2875F71200B52388 /* ViewController.m */,
+				728E4F512878D51300B52388 /* View Controllers */,
+				728E4F522878D52700B52388 /* Views */,
+				728E4F532878D53600B52388 /* API */,
 				728E4F1E2875F71200B52388 /* Main.storyboard */,
 				728E4F212875F71300B52388 /* Assets.xcassets */,
 				728E4F232875F71300B52388 /* LaunchScreen.storyboard */,
@@ -134,6 +146,43 @@
 				728E4F3D2875F71400B52388 /* capstoneUITestsLaunchTests.m */,
 			);
 			path = capstoneUITests;
+			sourceTree = "<group>";
+		};
+		728E4F512878D51300B52388 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				728E4F1B2875F71200B52388 /* ViewController.h */,
+				728E4F1C2875F71200B52388 /* ViewController.m */,
+				728E4F5A2878D89300B52388 /* HomeViewController.h */,
+				728E4F5B2878D89300B52388 /* HomeViewController.m */,
+				728E4F4D2878B4EA00B52388 /* SkincareViewController.h */,
+				728E4F4E2878B4EA00B52388 /* SkincareViewController.m */,
+				728E4F542878D84C00B52388 /* FiltersViewController.h */,
+				728E4F552878D84C00B52388 /* FiltersViewController.m */,
+				728E4F572878D86C00B52388 /* AccountViewController.h */,
+				728E4F582878D86C00B52388 /* AccountViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		728E4F522878D52700B52388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				728E4F4A2878B22500B52388 /* ProductCell.h */,
+				728E4F4B2878B22500B52388 /* ProductCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728E4F532878D53600B52388 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				728E4F152875F71200B52388 /* AppDelegate.h */,
+				728E4F162875F71200B52388 /* AppDelegate.m */,
+				728E4F182875F71200B52388 /* SceneDelegate.h */,
+				728E4F192875F71200B52388 /* SceneDelegate.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */,
+				728E4F4F2878B4EA00B52388 /* SkincareViewController.m in Sources */,
+				728E4F4C2878B22500B52388 /* ProductCell.m in Sources */,
 				728E4F1D2875F71200B52388 /* ViewController.m in Sources */,
 				728E4F172875F71200B52388 /* AppDelegate.m in Sources */,
+				728E4F5C2878D89300B52388 /* HomeViewController.m in Sources */,
 				728E4F282875F71300B52388 /* main.m in Sources */,
+				728E4F592878D86C00B52388 /* AccountViewController.m in Sources */,
 				728E4F1A2875F71200B52388 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
