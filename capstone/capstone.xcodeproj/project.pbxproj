@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720A977F287CAABF00FCA861 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720A977E287CAABF00FCA861 /* LoginViewController.m */; };
 		728E4F172875F71200B52388 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F162875F71200B52388 /* AppDelegate.m */; };
 		728E4F1A2875F71200B52388 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F192875F71200B52388 /* SceneDelegate.m */; };
-		728E4F1D2875F71200B52388 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F1C2875F71200B52388 /* ViewController.m */; };
 		728E4F202875F71200B52388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E4F1E2875F71200B52388 /* Main.storyboard */; };
 		728E4F222875F71300B52388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728E4F212875F71300B52388 /* Assets.xcassets */; };
 		728E4F252875F71300B52388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E4F232875F71300B52388 /* LaunchScreen.storyboard */; };
@@ -22,6 +22,9 @@
 		728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F552878D84C00B52388 /* FiltersViewController.m */; };
 		728E4F592878D86C00B52388 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F582878D86C00B52388 /* AccountViewController.m */; };
 		728E4F5C2878D89300B52388 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F5B2878D89300B52388 /* HomeViewController.m */; };
+		72B8DC9E4D02C1DCFA96E301 /* libPods-capstone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A484A9943E2BB1EC62C1C85C /* libPods-capstone.a */; };
+		AF698A10D666658CD6ED7153 /* libPods-capstoneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D55547685AACA99D4ADC86A /* libPods-capstoneTests.a */; };
+		C41AE14D6F61D8D2D296488C /* libPods-capstone-capstoneUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 383F2FB484DDF04CEBF9E1AC /* libPods-capstone-capstoneUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		383F2FB484DDF04CEBF9E1AC /* libPods-capstone-capstoneUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstone-capstoneUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D55547685AACA99D4ADC86A /* libPods-capstoneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstoneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		502AAB70D42A2C7D91FFD01D /* Pods-capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone.debug.xcconfig"; path = "Target Support Files/Pods-capstone/Pods-capstone.debug.xcconfig"; sourceTree = "<group>"; };
+		720A977D287CAABF00FCA861 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		720A977E287CAABF00FCA861 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		725A219F5937A49E07EDCD79 /* Pods-capstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneTests.release.xcconfig"; path = "Target Support Files/Pods-capstoneTests/Pods-capstoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		728E4F122875F71200B52388 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E4F152875F71200B52388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		728E4F162875F71200B52388 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		728E4F182875F71200B52388 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		728E4F192875F71200B52388 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		728E4F1B2875F71200B52388 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		728E4F1C2875F71200B52388 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		728E4F1F2875F71200B52388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		728E4F212875F71300B52388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728E4F242875F71300B52388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +76,11 @@
 		728E4F582878D86C00B52388 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		728E4F5A2878D89300B52388 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		728E4F5B2878D89300B52388 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8C36DFFF159CFAFEE08CC97F /* Pods-capstoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneTests.debug.xcconfig"; path = "Target Support Files/Pods-capstoneTests/Pods-capstoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A484A9943E2BB1EC62C1C85C /* libPods-capstone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B97C33DC631E1478A70A07 /* Pods-capstone-capstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone-capstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9C86CD7C346AC7B6161A849 /* Pods-capstone-capstoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone-capstoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF62E6D794F42F86506D61B /* Pods-capstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone.release.xcconfig"; path = "Target Support Files/Pods-capstone/Pods-capstone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B8DC9E4D02C1DCFA96E301 /* libPods-capstone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF698A10D666658CD6ED7153 /* libPods-capstoneTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41AE14D6F61D8D2D296488C /* libPods-capstone-capstoneUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AFC05B759ECD4DE3BA1E3FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A484A9943E2BB1EC62C1C85C /* libPods-capstone.a */,
+				383F2FB484DDF04CEBF9E1AC /* libPods-capstone-capstoneUITests.a */,
+				3D55547685AACA99D4ADC86A /* libPods-capstoneTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		728E4F092875F71200B52388 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,8 @@
 				728E4F302875F71400B52388 /* capstoneTests */,
 				728E4F3A2875F71400B52388 /* capstoneUITests */,
 				728E4F132875F71200B52388 /* Products */,
+				EEBA505062F35B6CE0998087 /* Pods */,
+				4AFC05B759ECD4DE3BA1E3FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,12 +146,12 @@
 		728E4F142875F71200B52388 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
+				728E4F1E2875F71200B52388 /* Main.storyboard */,
+				728E4F232875F71300B52388 /* LaunchScreen.storyboard */,
+				728E4F212875F71300B52388 /* Assets.xcassets */,
 				728E4F512878D51300B52388 /* View Controllers */,
 				728E4F522878D52700B52388 /* Views */,
 				728E4F532878D53600B52388 /* API */,
-				728E4F1E2875F71200B52388 /* Main.storyboard */,
-				728E4F212875F71300B52388 /* Assets.xcassets */,
-				728E4F232875F71300B52388 /* LaunchScreen.storyboard */,
 				728E4F262875F71300B52388 /* Info.plist */,
 				728E4F272875F71300B52388 /* main.m */,
 			);
@@ -151,8 +178,8 @@
 		728E4F512878D51300B52388 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				728E4F1B2875F71200B52388 /* ViewController.h */,
-				728E4F1C2875F71200B52388 /* ViewController.m */,
+				720A977D287CAABF00FCA861 /* LoginViewController.h */,
+				720A977E287CAABF00FCA861 /* LoginViewController.m */,
 				728E4F5A2878D89300B52388 /* HomeViewController.h */,
 				728E4F5B2878D89300B52388 /* HomeViewController.m */,
 				728E4F4D2878B4EA00B52388 /* SkincareViewController.h */,
@@ -185,6 +212,19 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		EEBA505062F35B6CE0998087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				502AAB70D42A2C7D91FFD01D /* Pods-capstone.debug.xcconfig */,
+				ECF62E6D794F42F86506D61B /* Pods-capstone.release.xcconfig */,
+				E9C86CD7C346AC7B6161A849 /* Pods-capstone-capstoneUITests.debug.xcconfig */,
+				E9B97C33DC631E1478A70A07 /* Pods-capstone-capstoneUITests.release.xcconfig */,
+				8C36DFFF159CFAFEE08CC97F /* Pods-capstoneTests.debug.xcconfig */,
+				725A219F5937A49E07EDCD79 /* Pods-capstoneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 728E4F412875F71400B52388 /* Build configuration list for PBXNativeTarget "capstone" */;
 			buildPhases = (
+				2B485E32015D5254234CCD83 /* [CP] Check Pods Manifest.lock */,
 				728E4F0E2875F71200B52388 /* Sources */,
 				728E4F0F2875F71200B52388 /* Frameworks */,
 				728E4F102875F71200B52388 /* Resources */,
+				BE04ED6BB12C56FBE7C8D493 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 728E4F442875F71400B52388 /* Build configuration list for PBXNativeTarget "capstoneTests" */;
 			buildPhases = (
+				FA4F5AA2C3640759A58B7002 /* [CP] Check Pods Manifest.lock */,
 				728E4F292875F71400B52388 /* Sources */,
 				728E4F2A2875F71400B52388 /* Frameworks */,
 				728E4F2B2875F71400B52388 /* Resources */,
@@ -227,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 728E4F472875F71400B52388 /* Build configuration list for PBXNativeTarget "capstoneUITests" */;
 			buildPhases = (
+				384ACC2D7F15E889AD228069 /* [CP] Check Pods Manifest.lock */,
 				728E4F332875F71400B52388 /* Sources */,
 				728E4F342875F71400B52388 /* Frameworks */,
 				728E4F352875F71400B52388 /* Resources */,
+				939FA2F29F814816B4948C56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +355,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B485E32015D5254234CCD83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-capstone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		384ACC2D7F15E889AD228069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-capstone-capstoneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939FA2F29F814816B4948C56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE04ED6BB12C56FBE7C8D493 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capstone/Pods-capstone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capstone/Pods-capstone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capstone/Pods-capstone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4F5AA2C3640759A58B7002 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-capstoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		728E4F0E2875F71200B52388 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,9 +466,9 @@
 				728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */,
 				728E4F4F2878B4EA00B52388 /* SkincareViewController.m in Sources */,
 				728E4F4C2878B22500B52388 /* ProductCell.m in Sources */,
-				728E4F1D2875F71200B52388 /* ViewController.m in Sources */,
 				728E4F172875F71200B52388 /* AppDelegate.m in Sources */,
 				728E4F5C2878D89300B52388 /* HomeViewController.m in Sources */,
+				720A977F287CAABF00FCA861 /* LoginViewController.m in Sources */,
 				728E4F282875F71300B52388 /* main.m in Sources */,
 				728E4F592878D86C00B52388 /* AccountViewController.m in Sources */,
 				728E4F1A2875F71200B52388 /* SceneDelegate.m in Sources */,
@@ -491,6 +639,7 @@
 		};
 		728E4F422875F71400B52388 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502AAB70D42A2C7D91FFD01D /* Pods-capstone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -518,6 +667,7 @@
 		};
 		728E4F432875F71400B52388 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF62E6D794F42F86506D61B /* Pods-capstone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -545,6 +695,7 @@
 		};
 		728E4F452875F71400B52388 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C36DFFF159CFAFEE08CC97F /* Pods-capstoneTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +714,7 @@
 		};
 		728E4F462875F71400B52388 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 725A219F5937A49E07EDCD79 /* Pods-capstoneTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -581,6 +733,7 @@
 		};
 		728E4F482875F71400B52388 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C86CD7C346AC7B6161A849 /* Pods-capstone-capstoneUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -597,6 +750,7 @@
 		};
 		728E4F492875F71400B52388 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B97C33DC631E1478A70A07 /* Pods-capstone-capstoneUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
