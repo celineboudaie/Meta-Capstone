@@ -10,7 +10,7 @@
 
 
 @interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *resultsArray;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *refreshCell;
@@ -25,9 +25,7 @@
     self.tableView.delegate = self;
 
     
-
-    
-    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api2/catalog/products/P297132"];
+    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api/catalog/search?type=keyword&content=true&includeRegionsMap=true&targetSearchEngine=nlp&countryCode=US&q=face%20wash"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -44,8 +42,7 @@
            }
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-
-               NSArray *resultsArray = dataDictionary[@"results"];
+               NSArray *resultsArray = dataDictionary[@"products"];
                self.resultsArray = resultsArray;
                [self.tableView reloadData];
              
@@ -59,10 +56,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
-   
     NSDictionary *product = self.resultsArray[indexPath.row];
+    NSLog(@"%@", product[@"productName"]);
     cell.productName.text = product[@"productName"];
-    return  cell;
+    return cell;
 }
 
 //2
@@ -70,9 +67,9 @@
     return self.resultsArray.count;
 }
 
--(void)fetchProducts{
-    
-}
+//-(void)fetchProducts{
+//
+//}
 /*
 #pragma mark - Navigation
 
