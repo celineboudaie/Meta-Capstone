@@ -6,8 +6,14 @@
 //
 
 #import "SkincareViewController.h"
+#import "ProductCell.h"
 
-@interface SkincareViewController ()
+
+@interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *resultsArray;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *refreshCell;
 
 @end
 
@@ -15,9 +21,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api/catalog/search?type=keyword&content=true&includeRegionsMap=true&targetSearchEngine=nlp&countryCode=US&q=face%20wash"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+           if (error != nil) {
+               NSLog(@"%@", [error localizedDescription]);
+               UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot Get Products" message:@"The internet appears to offline. Try to connect again!" preferredStyle:UIAlertControllerStyleAlert];
+
+               UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                       //button click event
+                                   }];
+               
+               [alert addAction:ok];
+               [self presentViewController:alert animated:YES completion:nil];
+           }
+           else {
+               NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+               NSArray *resultsArray = dataDictionary[@"products"];
+               self.resultsArray = resultsArray;
+               [self.tableView reloadData];
+             
+           }
+        [self.refreshControl endRefreshing];
+       }];
+    [self.refreshCell stopAnimating];
+
+    [task resume];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
+    NSDictionary *product = self.resultsArray[indexPath.row];
+    NSLog(@"%@", product[@"productName"]);
+    cell.productName.text = product[@"productName"];
+    return cell;
+}
+
+//2
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.resultsArray.count;
+}
+
+//-(void)fetchProducts{
+//
+//}
 /*
 #pragma mark - Navigation
 
