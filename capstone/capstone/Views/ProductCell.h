@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ProductCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *productName;
+@property (strong, nonatomic) IBOutlet UIImageView *productImage;
+@property (strong, nonatomic) IBOutlet UILabel *productBrand;
+@property (strong, nonatomic) IBOutlet UILabel *productPrice;
+@property (strong, nonatomic) IBOutlet UIButton *upvote;
+@property (strong, nonatomic) IBOutlet UIButton *downvote;
+@property (strong, nonatomic) IBOutlet UIButton *bookmark;
 
 @end
 

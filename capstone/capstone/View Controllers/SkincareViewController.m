@@ -56,9 +56,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
-    NSDictionary *product = self.resultsArray[indexPath.row];
-    NSLog(@"%@", product[@"productName"]);
-    cell.productName.text = product[@"productName"];
+    NSDictionary *Product = self.resultsArray[indexPath.row];
+    NSLog(@"%@", Product[@"productName"]);
+    cell.productName.text = Product[@"productName"];
+    cell.productBrand.text = Product[@"brandName"];
+    
     return cell;
 }
 
