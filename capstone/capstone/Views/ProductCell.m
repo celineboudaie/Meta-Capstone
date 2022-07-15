@@ -11,7 +11,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -22,6 +21,15 @@
 
 -(void) refreshData{
     
+}
+
+- (IBAction)tapUpvote:(id)sender {
+}
+
+- (IBAction)tapDownvote:(id)sender {
+}
+
+- (IBAction)tapBookmark:(id)sender {
 }
 
 @end

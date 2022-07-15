@@ -6,6 +6,7 @@ target 'capstone' do
 
   # Pods for capstone
 	pod 'Parse'
+  pod 'AFNetworking'
 
   target 'capstoneTests' do
     inherit! :search_paths

@@ -7,6 +7,8 @@
 
 #import "SkincareViewController.h"
 #import "ProductCell.h"
+#import "UIImageView+AFNetworking.h"
+
 
 
 @interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -60,6 +62,16 @@
     NSLog(@"%@", Product[@"productName"]);
     cell.productName.text = Product[@"productName"];
     cell.productBrand.text = Product[@"brandName"];
+    cell.productPrice.text = Product[@"listPrice"];
+    
+    NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
+    NSString *posterURLString = Product[@"poster_path"];
+    NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
+    
+    NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
+    cell.productImage.image = nil;
+    [cell.productImage setImageWithURL:posterURL];
+    
     
     return cell;
 }
