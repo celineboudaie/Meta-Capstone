@@ -65,12 +65,12 @@
     cell.productPrice.text = Product[@"listPrice"];
     
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
-    NSString *posterURLString = Product[@"poster_path"];
-    NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
-    
-    NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
+    NSString *productURLString = Product[@"image135"];
+    NSString *fullProductURLString = [baseURLString stringByAppendingString:productURLString];
+
+    NSURL *productURL = [NSURL URLWithString:fullProductURLString];
     cell.productImage.image = nil;
-    [cell.productImage setImageWithURL:posterURL];
+    [cell.productImage setImageWithURL:productURL];
     
     
     return cell;

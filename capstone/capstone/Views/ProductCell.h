@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Product.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ProductCell : UITableViewCell
+@property (strong, nonatomic) Product *product;
 @property (strong, nonatomic) IBOutlet UILabel *productName;
 @property (strong, nonatomic) IBOutlet UIImageView *productImage;
 @property (strong, nonatomic) IBOutlet UILabel *productBrand;

@@ -102,61 +102,77 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UxV-XB-xmF">
-                                                    <rect key="frame" x="12" y="12" width="133" height="119"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UxV-XB-xmF">
+                                                    <rect key="frame" x="12" y="12" width="150" height="125"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="6bj-Gx-7Ea"/>
+                                                        <constraint firstAttribute="height" constant="125" id="rFs-rN-y4T"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSH-zB-h1R">
-                                                    <rect key="frame" x="148" y="30" width="246" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSH-zB-h1R">
+                                                    <rect key="frame" x="170" y="30" width="49" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-O2-S0G">
-                                                    <rect key="frame" x="20" y="139" width="46" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-Rq-Yeq">
+                                                    <rect key="frame" x="171" y="155" width="178" height="28"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-lb-llC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="67.5" height="28"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title="xxx"/>
+                                                            <connections>
+                                                                <action selector="tapUpvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="pdd-Ov-Mhc"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-Ff-dL2">
+                                                            <rect key="frame" x="67.5" y="0.0" width="67.5" height="28"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.down.heart" catalog="system" title="xxx"/>
+                                                            <connections>
+                                                                <action selector="tapDownvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="Ntg-Zz-X73"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-ZC-V1L">
+                                                            <rect key="frame" x="135" y="0.0" width="43" height="28"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="tapBookmark:" destination="CGi-x4-pXT" eventType="touchUpInside" id="4O9-oh-jXe"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-8w-cTR">
+                                                    <rect key="frame" x="170" y="61" width="109.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-Ff-dL2">
-                                                    <rect key="frame" x="294" y="155" width="68" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.down.heart" catalog="system" title="xxx"/>
-                                                    <connections>
-                                                        <action selector="tapDownvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="Ntg-Zz-X73"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-ZC-V1L">
-                                                    <rect key="frame" x="359" y="155" width="43" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
-                                                    <connections>
-                                                        <action selector="tapBookmark:" destination="CGi-x4-pXT" eventType="touchUpInside" id="4O9-oh-jXe"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-lb-llC">
-                                                    <rect key="frame" x="220" y="155" width="68" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title="xxx"/>
-                                                    <connections>
-                                                        <action selector="tapUpvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="pdd-Ov-Mhc"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-8w-cTR">
-                                                    <rect key="frame" x="148" y="70" width="246" height="71"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I66-Ns-ygG">
+                                                    <rect key="frame" x="68" y="155" width="39" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wlo-8w-cTR" firstAttribute="centerY" secondItem="Y48-0g-ELB" secondAttribute="centerY" id="Tkw-NB-8YY"/>
-                                                <constraint firstItem="wlo-8w-cTR" firstAttribute="centerX" secondItem="Y48-0g-ELB" secondAttribute="centerX" id="nCT-90-KTd"/>
+                                                <constraint firstItem="UxV-XB-xmF" firstAttribute="top" secondItem="Y48-0g-ELB" secondAttribute="top" constant="12" id="6v8-5n-h4e"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wlo-8w-cTR" secondAttribute="trailing" constant="10" id="Dly-rZ-16g"/>
+                                                <constraint firstItem="wlo-8w-cTR" firstAttribute="leading" secondItem="UxV-XB-xmF" secondAttribute="trailing" constant="8" symbolic="YES" id="EUo-pQ-pw7"/>
+                                                <constraint firstItem="Jt0-Rq-Yeq" firstAttribute="leading" secondItem="I66-Ns-ygG" secondAttribute="trailing" constant="64" id="Hd8-Pd-WUP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nSH-zB-h1R" secondAttribute="trailing" constant="10" id="KCP-YT-dB7"/>
+                                                <constraint firstItem="nSH-zB-h1R" firstAttribute="leading" secondItem="UxV-XB-xmF" secondAttribute="trailing" constant="8" symbolic="YES" id="cxg-FC-6mW"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jt0-Rq-Yeq" secondAttribute="bottom" constant="30" id="ejF-Au-jjU"/>
+                                                <constraint firstItem="UxV-XB-xmF" firstAttribute="leading" secondItem="Y48-0g-ELB" secondAttribute="leading" constant="12" id="f0H-Eq-v3R"/>
+                                                <constraint firstItem="I66-Ns-ygG" firstAttribute="top" secondItem="Jt0-Rq-Yeq" secondAttribute="top" id="gbp-dx-j1l"/>
+                                                <constraint firstItem="I66-Ns-ygG" firstAttribute="top" secondItem="UxV-XB-xmF" secondAttribute="bottom" constant="18" id="gsU-Ky-CXc"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jt0-Rq-Yeq" secondAttribute="trailing" constant="50" id="iCq-pg-TYF"/>
+                                                <constraint firstAttribute="bottom" secondItem="I66-Ns-ygG" secondAttribute="bottom" constant="30" id="lHA-Ac-qmk"/>
+                                                <constraint firstItem="wlo-8w-cTR" firstAttribute="top" secondItem="nSH-zB-h1R" secondAttribute="bottom" constant="10.5" id="moi-ow-RDJ"/>
+                                                <constraint firstItem="nSH-zB-h1R" firstAttribute="top" secondItem="Y48-0g-ELB" secondAttribute="top" constant="30" id="p0s-ba-SY2"/>
+                                                <constraint firstItem="I66-Ns-ygG" firstAttribute="leading" secondItem="Y48-0g-ELB" secondAttribute="leading" constant="68" id="w7I-nY-J6Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -165,7 +181,7 @@
                                             <outlet property="productBrand" destination="nSH-zB-h1R" id="KJ3-CL-Ie4"/>
                                             <outlet property="productImage" destination="UxV-XB-xmF" id="RI6-8Z-FdF"/>
                                             <outlet property="productName" destination="wlo-8w-cTR" id="JTb-6d-VRE"/>
-                                            <outlet property="productPrice" destination="pbF-O2-S0G" id="qGX-bO-RAx"/>
+                                            <outlet property="productPrice" destination="I66-Ns-ygG" id="2Ai-Z2-BoS"/>
                                             <outlet property="upvote" destination="oIT-lb-llC" id="bfQ-7H-5JZ"/>
                                         </connections>
                                     </tableViewCell>
@@ -241,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVu-db-EMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4725" y="822"/>
+            <point key="canvasLocation" x="4725" y="793"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xhU-GR-Sz0">
@@ -256,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ty-Wm-OpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6725" y="822"/>
+            <point key="canvasLocation" x="6725" y="793"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2wg-V5-YKN">
