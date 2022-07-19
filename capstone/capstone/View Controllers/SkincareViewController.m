@@ -27,7 +27,7 @@
     self.tableView.delegate = self;
 
     
-    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api/catalog/search?type=keyword&content=true&includeRegionsMap=true&targetSearchEngine=nlp&countryCode=US&q=face%20wash"];
+    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api/catalog/search?type=keyword&content=true&includeRegionsMap=true&targetSearchEngine=nlp&countryCode=US&q=skincare"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

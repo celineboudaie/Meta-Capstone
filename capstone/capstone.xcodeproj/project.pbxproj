@@ -127,8 +127,8 @@
 		728E4F092875F71200B52388 = {
 			isa = PBXGroup;
 			children = (
-				72FE3C5C2882214F006D5D44 /* Models */,
 				728E4F142875F71200B52388 /* capstone */,
+				72FE3C5C2882214F006D5D44 /* Models */,
 				728E4F302875F71400B52388 /* capstoneTests */,
 				728E4F3A2875F71400B52388 /* capstoneUITests */,
 				728E4F132875F71200B52388 /* Products */,
@@ -150,14 +150,17 @@
 		728E4F142875F71200B52388 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
-				728E4F1E2875F71200B52388 /* Main.storyboard */,
 				728E4F232875F71300B52388 /* LaunchScreen.storyboard */,
+				728E4F1E2875F71200B52388 /* Main.storyboard */,
 				728E4F212875F71300B52388 /* Assets.xcassets */,
-				728E4F512878D51300B52388 /* View Controllers */,
-				728E4F522878D52700B52388 /* Views */,
-				728E4F532878D53600B52388 /* API */,
+				728E4F152875F71200B52388 /* AppDelegate.h */,
+				728E4F162875F71200B52388 /* AppDelegate.m */,
+				728E4F182875F71200B52388 /* SceneDelegate.h */,
+				728E4F192875F71200B52388 /* SceneDelegate.m */,
 				728E4F262875F71300B52388 /* Info.plist */,
 				728E4F272875F71300B52388 /* main.m */,
+				728E4F512878D51300B52388 /* View Controllers */,
+				728E4F522878D52700B52388 /* Views */,
 			);
 			path = capstone;
 			sourceTree = "<group>";
@@ -203,17 +206,6 @@
 				728E4F4B2878B22500B52388 /* ProductCell.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		728E4F532878D53600B52388 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				728E4F152875F71200B52388 /* AppDelegate.h */,
-				728E4F162875F71200B52388 /* AppDelegate.m */,
-				728E4F182875F71200B52388 /* SceneDelegate.h */,
-				728E4F192875F71200B52388 /* SceneDelegate.m */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		72FE3C5C2882214F006D5D44 /* Models */ = {
