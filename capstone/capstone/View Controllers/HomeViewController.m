@@ -39,8 +39,8 @@
 
 
 - (IBAction)transferData:(id)sender {
-    //newProduct.Name = Product[@"productName"];
-    //newProduct.Brand = Product[@"brandName"];
+    Product.Name = Product[@"productName"];
+    Product.Brand = Product[@"brandName"];
 }
 
 /*

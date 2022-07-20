@@ -9,6 +9,13 @@
 #import "PFObject+Subclass.h"
 
 @implementation Product
+@dynamic idStr;
+@dynamic upvoteCount;
+@dynamic upvoted;
+@dynamic downvoteCount;
+@dynamic downvoted;
+@dynamic bookmark;
+
 +(nonnull NSString *)parseClassName{
     return @"Product";
 }
