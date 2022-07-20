@@ -74,6 +74,17 @@
                     <view key="view" contentMode="scaleToFill" id="KQY-Le-MJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfq-If-eMz">
+                                <rect key="frame" x="93" y="284" width="228" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Get API Info in Parse"/>
+                                <connections>
+                                    <action selector="transferData:" destination="4yT-jz-HVs" eventType="touchUpInside" id="W6w-6V-LcN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vvu-cu-yFA"/>
                         <color key="backgroundColor" red="0.93882567307935594" green="0.97394164801401872" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -81,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ko-0X-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2863.768115942029" y="48.883928571428569"/>
+            <point key="canvasLocation" x="2862.3188405797105" y="48.883928571428569"/>
         </scene>
         <!--Skincare-->
         <scene sceneID="WAO-MT-Zfr">
@@ -116,26 +127,26 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-Rq-Yeq">
-                                                    <rect key="frame" x="171" y="155" width="178" height="28"/>
+                                                    <rect key="frame" x="171" y="155" width="134" height="28"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-lb-llC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="67.5" height="28"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="45.5" height="28"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title="xxx"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title=""/>
                                                             <connections>
                                                                 <action selector="tapUpvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="pdd-Ov-Mhc"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-Ff-dL2">
-                                                            <rect key="frame" x="67.5" y="0.0" width="67.5" height="28"/>
+                                                            <rect key="frame" x="45.5" y="0.0" width="45.5" height="28"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.down.heart" catalog="system" title="xxx"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.down.heart" catalog="system" title=""/>
                                                             <connections>
                                                                 <action selector="tapDownvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="Ntg-Zz-X73"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-ZC-V1L">
-                                                            <rect key="frame" x="135" y="0.0" width="43" height="28"/>
+                                                            <rect key="frame" x="91" y="0.0" width="43" height="28"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
                                                             <connections>
@@ -229,6 +240,26 @@
                     <view key="view" contentMode="scaleToFill" id="Yel-Ed-9kw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEf-Up-kJe">
+                                <rect key="frame" x="14" y="192" width="380" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Saved Products"/>
+                                <connections>
+                                    <segue destination="WwA-1z-1k7" kind="presentation" id="Hec-dV-2hF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsM-19-god">
+                                <rect key="frame" x="14" y="347" width="380" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Saved Articles"/>
+                                <connections>
+                                    <segue destination="t5q-6Z-cmb" kind="presentation" id="1Bk-Li-53s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VwM-h2-cvq"/>
                         <color key="backgroundColor" red="0.93882567309999998" green="0.97394164800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -242,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgW-1h-ZSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8642" y="67"/>
+            <point key="canvasLocation" x="8640.579710144928" y="66.964285714285708"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="p1w-zc-FKz">
@@ -279,11 +310,11 @@
             <objects>
                 <viewController id="WwA-1z-1k7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ev-jI-6nW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saved Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-SF-qAu">
-                                <rect key="frame" x="62" y="65" width="291" height="120"/>
+                                <rect key="frame" x="62" y="28" width="291" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -296,18 +327,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lw5-CI-SUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8641" y="822"/>
+            <point key="canvasLocation" x="8640.579710144928" y="821.65178571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AmH-tx-DKe">
             <objects>
                 <viewController id="t5q-6Z-cmb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qfy-4X-vcl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saved Articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuE-yl-QgM">
-                                <rect key="frame" x="52" y="79" width="311" height="98"/>
+                                <rect key="frame" x="59" y="31" width="297" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>

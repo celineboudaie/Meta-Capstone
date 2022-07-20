@@ -39,7 +39,7 @@
         self.product.upvoted = YES;
         self.product.upvoteCount += 1;
         [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
-        self.productObject = self.product;
+//        self.productObject = self.product;
         [self refreshData];
 //        [[APIManager shared] upvote:self.Product completion:^(Product *product, NSError *error) {
 //

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		720A977F287CAABF00FCA861 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720A977E287CAABF00FCA861 /* LoginViewController.m */; };
+		723619982888A0EA00BCEC79 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 723619972888A0EA00BCEC79 /* Product.m */; };
 		728E4F172875F71200B52388 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F162875F71200B52388 /* AppDelegate.m */; };
 		728E4F1A2875F71200B52388 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F192875F71200B52388 /* SceneDelegate.m */; };
 		728E4F202875F71200B52388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E4F1E2875F71200B52388 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		728E4F592878D86C00B52388 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F582878D86C00B52388 /* AccountViewController.m */; };
 		728E4F5C2878D89300B52388 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F5B2878D89300B52388 /* HomeViewController.m */; };
 		72B8DC9E4D02C1DCFA96E301 /* libPods-capstone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A484A9943E2BB1EC62C1C85C /* libPods-capstone.a */; };
-		72FE3C5F28822376006D5D44 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE3C5E28822376006D5D44 /* Product.m */; };
 		AF698A10D666658CD6ED7153 /* libPods-capstoneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D55547685AACA99D4ADC86A /* libPods-capstoneTests.a */; };
 		C41AE14D6F61D8D2D296488C /* libPods-capstone-capstoneUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 383F2FB484DDF04CEBF9E1AC /* libPods-capstone-capstoneUITests.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,8 @@
 		502AAB70D42A2C7D91FFD01D /* Pods-capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone.debug.xcconfig"; path = "Target Support Files/Pods-capstone/Pods-capstone.debug.xcconfig"; sourceTree = "<group>"; };
 		720A977D287CAABF00FCA861 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		720A977E287CAABF00FCA861 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		723619962888A0EA00BCEC79 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "../capstone/View Controllers/Product.h"; sourceTree = "<group>"; };
+		723619972888A0EA00BCEC79 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "../capstone/View Controllers/Product.m"; sourceTree = "<group>"; };
 		725A219F5937A49E07EDCD79 /* Pods-capstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneTests.release.xcconfig"; path = "Target Support Files/Pods-capstoneTests/Pods-capstoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		728E4F122875F71200B52388 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E4F152875F71200B52388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		728E4F582878D86C00B52388 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		728E4F5A2878D89300B52388 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		728E4F5B2878D89300B52388 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		72FE3C5D28822376006D5D44 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
-		72FE3C5E28822376006D5D44 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		8C36DFFF159CFAFEE08CC97F /* Pods-capstoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneTests.debug.xcconfig"; path = "Target Support Files/Pods-capstoneTests/Pods-capstoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A484A9943E2BB1EC62C1C85C /* libPods-capstone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B97C33DC631E1478A70A07 /* Pods-capstone-capstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone-capstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-capstone-capstoneUITests/Pods-capstone-capstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		728E4F092875F71200B52388 = {
 			isa = PBXGroup;
 			children = (
-				72FE3C5C2882214F006D5D44 /* Models */,
 				728E4F142875F71200B52388 /* capstone */,
+				72FE3C5C2882214F006D5D44 /* Models */,
 				728E4F302875F71400B52388 /* capstoneTests */,
 				728E4F3A2875F71400B52388 /* capstoneUITests */,
 				728E4F132875F71200B52388 /* Products */,
@@ -150,14 +150,17 @@
 		728E4F142875F71200B52388 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
-				728E4F1E2875F71200B52388 /* Main.storyboard */,
 				728E4F232875F71300B52388 /* LaunchScreen.storyboard */,
+				728E4F1E2875F71200B52388 /* Main.storyboard */,
 				728E4F212875F71300B52388 /* Assets.xcassets */,
-				728E4F512878D51300B52388 /* View Controllers */,
-				728E4F522878D52700B52388 /* Views */,
-				728E4F532878D53600B52388 /* API */,
+				728E4F152875F71200B52388 /* AppDelegate.h */,
+				728E4F162875F71200B52388 /* AppDelegate.m */,
+				728E4F182875F71200B52388 /* SceneDelegate.h */,
+				728E4F192875F71200B52388 /* SceneDelegate.m */,
 				728E4F262875F71300B52388 /* Info.plist */,
 				728E4F272875F71300B52388 /* main.m */,
+				728E4F512878D51300B52388 /* View Controllers */,
+				728E4F522878D52700B52388 /* Views */,
 			);
 			path = capstone;
 			sourceTree = "<group>";
@@ -205,22 +208,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		728E4F532878D53600B52388 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				728E4F152875F71200B52388 /* AppDelegate.h */,
-				728E4F162875F71200B52388 /* AppDelegate.m */,
-				728E4F182875F71200B52388 /* SceneDelegate.h */,
-				728E4F192875F71200B52388 /* SceneDelegate.m */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		72FE3C5C2882214F006D5D44 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				72FE3C5D28822376006D5D44 /* Product.h */,
-				72FE3C5E28822376006D5D44 /* Product.m */,
+				723619962888A0EA00BCEC79 /* Product.h */,
+				723619972888A0EA00BCEC79 /* Product.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,7 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */,
-				72FE3C5F28822376006D5D44 /* Product.m in Sources */,
+				723619982888A0EA00BCEC79 /* Product.m in Sources */,
 				728E4F4F2878B4EA00B52388 /* SkincareViewController.m in Sources */,
 				728E4F4C2878B22500B52388 /* ProductCell.m in Sources */,
 				728E4F172875F71200B52388 /* AppDelegate.m in Sources */,
