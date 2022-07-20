@@ -6,6 +6,9 @@
 //
 
 #import "HomeViewController.h"
+#import "Parse/Parse.h"
+#import "Product.h""
+
 
 @interface HomeViewController ()
 
@@ -15,7 +18,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSURL *url = [NSURL URLWithString:@"https://www.sephora.com/api/catalog/search?type=keyword&content=true&includeRegionsMap=true&targetSearchEngine=nlp&countryCode=US&q=skincare"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+}
+//ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
+//NSDictionary *Product = self.resultsArray[indexPath.row];
+//NSLog(@"%@", Product[@"productName"]);
+//cell.productName.text = Product[@"productName"];
+//cell.productBrand.text = Product[@"brandName"];
+//cell.productPrice.text = Product[@"listPrice"];
+//
+//NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
+//NSString *productURLString = Product[@"image135"];
+//NSString *fullProductURLString = [baseURLString stringByAppendingString:productURLString];
+//
+//NSURL *productURL = [NSURL URLWithString:fullProductURLString];
+//cell.productImage.image = nil;
+//[cell.productImage setImageWithURL:productURL];
+
+
+- (IBAction)transferData:(id)sender {
+    //newProduct.Name = Product[@"productName"];
+    //newProduct.Brand = Product[@"brandName"];
 }
 
 /*
