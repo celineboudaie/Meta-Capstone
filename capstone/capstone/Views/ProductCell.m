@@ -8,6 +8,7 @@
 #import "ProductCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "AppDelegate.h"
+#import "Product.h"
 
 
 

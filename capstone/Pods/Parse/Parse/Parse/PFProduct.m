@@ -9,7 +9,6 @@
 
 #import "PFProduct.h"
 #import "PFProduct+Private.h"
-
 #import "PFAssert.h"
 #import "PFObject+Subclass.h"
 

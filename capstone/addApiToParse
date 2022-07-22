@@ -1,0 +1,4 @@
+from parse_rest.connection import register
+register("WAVphoQM8Ap3MNrtuljK7xbqnbEkP07RbfBad7x2", "cd8hYlnVzJmQg2FU1lEFFchpD2I7ZsQSPxEugmaO" , master_key="LXiHKc7CiN62lfBo1t9ub23LoF1k6n1vjPOFPfx0")
+
+
