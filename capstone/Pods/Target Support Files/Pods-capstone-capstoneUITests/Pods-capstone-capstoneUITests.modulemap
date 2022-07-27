@@ -1,0 +1,6 @@
+module Pods_capstone_capstoneUITests {
+  umbrella header "Pods-capstone-capstoneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

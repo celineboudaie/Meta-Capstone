@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		720A977F287CAABF00FCA861 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720A977E287CAABF00FCA861 /* LoginViewController.m */; };
-		723619982888A0EA00BCEC79 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 723619972888A0EA00BCEC79 /* Product.m */; };
+		7236199B288A238400BCEC79 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 7236199A288A238400BCEC79 /* Product.m */; };
 		728E4F172875F71200B52388 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F162875F71200B52388 /* AppDelegate.m */; };
 		728E4F1A2875F71200B52388 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E4F192875F71200B52388 /* SceneDelegate.m */; };
 		728E4F202875F71200B52388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E4F1E2875F71200B52388 /* Main.storyboard */; };
@@ -51,8 +51,8 @@
 		502AAB70D42A2C7D91FFD01D /* Pods-capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstone.debug.xcconfig"; path = "Target Support Files/Pods-capstone/Pods-capstone.debug.xcconfig"; sourceTree = "<group>"; };
 		720A977D287CAABF00FCA861 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		720A977E287CAABF00FCA861 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		723619962888A0EA00BCEC79 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "../capstone/View Controllers/Product.h"; sourceTree = "<group>"; };
-		723619972888A0EA00BCEC79 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "../capstone/View Controllers/Product.m"; sourceTree = "<group>"; };
+		72361999288A238400BCEC79 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		7236199A288A238400BCEC79 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		725A219F5937A49E07EDCD79 /* Pods-capstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capstoneTests.release.xcconfig"; path = "Target Support Files/Pods-capstoneTests/Pods-capstoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		728E4F122875F71200B52388 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E4F152875F71200B52388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 		728E4F512878D51300B52388 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				720A977D287CAABF00FCA861 /* LoginViewController.h */,
 				720A977E287CAABF00FCA861 /* LoginViewController.m */,
+				720A977D287CAABF00FCA861 /* LoginViewController.h */,
 				728E4F5A2878D89300B52388 /* HomeViewController.h */,
 				728E4F5B2878D89300B52388 /* HomeViewController.m */,
 				728E4F4E2878B4EA00B52388 /* SkincareViewController.m */,
@@ -211,8 +211,8 @@
 		72FE3C5C2882214F006D5D44 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				723619962888A0EA00BCEC79 /* Product.h */,
-				723619972888A0EA00BCEC79 /* Product.m */,
+				72361999288A238400BCEC79 /* Product.h */,
+				7236199A288A238400BCEC79 /* Product.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728E4F562878D84C00B52388 /* FiltersViewController.m in Sources */,
-				723619982888A0EA00BCEC79 /* Product.m in Sources */,
+				7236199B288A238400BCEC79 /* Product.m in Sources */,
 				728E4F4F2878B4EA00B52388 /* SkincareViewController.m in Sources */,
 				728E4F4C2878B22500B52388 /* ProductCell.m in Sources */,
 				728E4F172875F71200B52388 /* AppDelegate.m in Sources */,

@@ -8,6 +8,8 @@
 #import "ProductCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "AppDelegate.h"
+#import "Product.h"
+#import "SkincareViewController.h"
 
 
 
@@ -21,8 +23,11 @@
     [super setSelected:selected animated:animated];
 }
 
--(void)setProductObject:(Product *)product{
-    self.product = product;
+-(void)setProduct:(PFObject *)product{
+    _product = [[Product alloc] initWithPFObject:product];
+    self.productName.text = self.product.Name;
+    self.productBrand.text = self.product.Brand;
+    self.productPrice.text = self.product.Price;
     [self refreshData];
 }
 
@@ -41,33 +46,14 @@
         [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
 //        self.productObject = self.product;
         [self refreshData];
-//        [[APIManager shared] upvote:self.Product completion:^(Product *product, NSError *error) {
-//
-//            if(error){
-//                NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
-//            }
-//            else{
-//                NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);
-//            }
-//        }];
+
     }
     else{
         self.product.upvoted = NO;
         self.product.upvoteCount -= 1;
         [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart"] forState:UIControlStateNormal];
-        self.productObject = self.product;
         [self refreshData];
-//        [[APIManager shared] upvote:self.product completion:^(Product *product, NSError *error) {
-//
-//        if(error){
-//            NSLog(@"Error upvoting product: %@", error.localizedDescription);
-//        }
-//        else{
-//            NSLog(@"Successfully upvoted the following Product: %@", _tweet.text);
-//        }
-//
-//        }];
-//    }
+
 }
 }
 
