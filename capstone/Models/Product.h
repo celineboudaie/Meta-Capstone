@@ -12,7 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Product : NSObject
-@property (nonatomic, strong) NSString *idStr;
+- (instancetype)initWithPFObject:(PFObject *)productObject;
+@property (nonatomic, strong) NSString *Name;
+@property (nonatomic, strong) NSString *Brand;
+@property (nonatomic, strong) NSString *Price;
+@property (nonatomic, strong) NSString *Ingredients;
+@property (nonatomic, strong) NSString *Category;
 @property (nonatomic) int upvoteCount;
 @property (nonatomic) BOOL upvoted;
 @property (nonatomic) int downvoteCount;
@@ -21,3 +26,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
