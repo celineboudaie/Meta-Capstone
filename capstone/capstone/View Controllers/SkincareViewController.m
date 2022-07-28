@@ -10,11 +10,10 @@
 #import "Product.h"
 #import "UIImageView+AFNetworking.h"
 #import "Parse/Parse.h"
-
+#import "ProductDetailsViewController.h"
 
 @interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-//@property (nonatomic, strong) NSArray *productResults;
 @property (strong, nonatomic) NSArray<Product *> *productResults;
 
 
@@ -31,6 +30,8 @@
     [query selectKeys:@[@"Name"]];
     [query selectKeys:@[@"Brand"]];
     [query selectKeys:@[@"Price"]];
+    [query selectKeys:@[@"Ingredients"]];
+    [query selectKeys:@[@"Category"]];
     
       [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
           if (!error) {
@@ -50,9 +51,16 @@
     return cell;
 }
         
-        - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-        return self.productResults.count;
-       }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.productResults.count;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *senderIndex = [self.tableView indexPathForCell:sender];
+    NSDictionary *products = self.productResults[senderIndex.row];
+    ProductDetailsViewController *detailVC = [segue destinationViewController];
+    detailVC.products = products;
+}
 @end
         
         

@@ -7,7 +7,8 @@ target 'capstone' do
   # Pods for capstone
 	pod 'Parse'
   pod 'AFNetworking'
-  pod 'RSSelectionMenu'
+  pod 'MKDropdownMenu'
+
 
   target 'capstoneTests' do
     inherit! :search_paths
