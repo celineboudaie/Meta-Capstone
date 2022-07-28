@@ -1,6 +1,0 @@
-module RSSelectionMenu {
-  umbrella header "RSSelectionMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}
