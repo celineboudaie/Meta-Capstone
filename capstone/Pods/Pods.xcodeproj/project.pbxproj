@@ -793,7 +793,7 @@
 		84FA6A7E16CE8D89631F9DD6B8625432 /* PFAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFAlertView.m; path = Parse/Parse/Internal/PFAlertView.m; sourceTree = "<group>"; };
 		85FADCF73784AA97F38CECB8CFAA69F8 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		865F457745A7901432645D03D5B98F46 /* BFCancellationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationToken.m; path = Bolts/Common/BFCancellationToken.m; sourceTree = "<group>"; };
-		873AD0754E6EBD63A807FBB14B22EC42 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
+		873AD0754E6EBD63A807FBB14B22EC42 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
 		87A033B60B14C440CC716F987AFF1E4D /* PFPin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPin.m; path = Parse/Parse/Internal/LocalDataStore/Pin/PFPin.m; sourceTree = "<group>"; };
 		88853693506621F3084B31532D1D0D25 /* PFQueryController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFQueryController.m; path = Parse/Parse/Internal/Query/Controller/PFQueryController.m; sourceTree = "<group>"; };
 		890C628170301EF52D1E4C258076170E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
@@ -828,7 +828,7 @@
 		9ACBDDA92654569A22013AB45534E8DF /* PFMutableFileState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFMutableFileState.m; path = Parse/Parse/Internal/File/State/PFMutableFileState.m; sourceTree = "<group>"; };
 		9C4EF755CBB8A7E6D71AA3736CB2A221 /* PFRelationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRelationPrivate.h; path = Parse/Parse/Internal/Relation/PFRelationPrivate.h; sourceTree = "<group>"; };
 		9C6B4FF3637FD13D00ACF75105A69F57 /* PFObjectState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFObjectState.m; path = Parse/Parse/Internal/Object/State/PFObjectState.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F8DE9C46E3DFC8CFDF1AC16C7A5065B /* PFProductsRequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFProductsRequestHandler.m; path = Parse/Parse/Internal/Product/ProductsRequestHandler/PFProductsRequestHandler.m; sourceTree = "<group>"; };
 		9FA4B7F9DD85B7150BE1A0297BDD7700 /* PFObjectController_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectController_Private.h; path = Parse/Parse/Internal/Object/Controller/PFObjectController_Private.h; sourceTree = "<group>"; };
 		A0408A11D4E4CD54472BED6109C8683C /* Pods-capstone-capstoneUITests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-capstone-capstoneUITests"; path = "libPods-capstone-capstoneUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -908,7 +908,7 @@
 		C81CD113CD1FF91AA76D658C06362FC0 /* PFFileStagingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFileStagingController.h; path = Parse/Parse/Internal/File/Controller/PFFileStagingController.h; sourceTree = "<group>"; };
 		C82FF05FF5A6D497C46EE1B1CD20BF93 /* PFSQLiteDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFSQLiteDatabase.m; path = Parse/Parse/Internal/LocalDataStore/SQLite/PFSQLiteDatabase.m; sourceTree = "<group>"; };
 		C838EE2FA5C531955A563AF42570423C /* PFUserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFUserState.m; path = Parse/Parse/Internal/User/State/PFUserState.m; sourceTree = "<group>"; };
-		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = RSSelectionMenu; path = libRSSelectionMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C4578432714A1A74A7A0C4B4023447 /* libRSSelectionMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRSSelectionMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B0695C19F4B854C554FC3E1B011B2C /* PFQueryController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQueryController.h; path = Parse/Parse/Internal/Query/Controller/PFQueryController.h; sourceTree = "<group>"; };
 		C9CF4D4D46E5824BE7989C8AC7CBDAA8 /* PFEventuallyQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFEventuallyQueue.m; path = Parse/Parse/Internal/PFEventuallyQueue.m; sourceTree = "<group>"; };
 		C9EACC9BCE9C9DE022EACA4B77442DA2 /* PFObjectController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectController.h; path = Parse/Parse/Internal/Object/Controller/PFObjectController.h; sourceTree = "<group>"; };
@@ -988,7 +988,7 @@
 		F0EE6F9A12EB2D86BF555401F51FE559 /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = Parse/Parse/Parse.h; sourceTree = "<group>"; };
 		F1CDA807F68ACFDFD37DC8A14EAF8A5E /* PFConfig_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConfig_Private.h; path = Parse/Parse/Internal/Config/PFConfig_Private.h; sourceTree = "<group>"; };
 		F2CF7361F0F4408602DA2474272820D6 /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPush.h; path = Parse/Parse/PFPush.h; sourceTree = "<group>"; };
-		F44831310C88EE4E454A4A36378CF37D /* Pods-capstone */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-capstone"; path = "libPods-capstone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44831310C88EE4E454A4A36378CF37D /* libPods-capstone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-capstone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49FD4350E54CBAC41B28D6B5E58623B /* PFCoreDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCoreDataProvider.h; path = Parse/Parse/Internal/PFCoreDataProvider.h; sourceTree = "<group>"; };
 		F4D703A9503984A42D10E489CDD8182A /* PFPropertyInfo_Runtime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPropertyInfo_Runtime.m; path = Parse/Parse/Internal/PropertyInfo/PFPropertyInfo_Runtime.m; sourceTree = "<group>"; };
 		F51596EEFE88BA0F38194B7DB53CD367 /* PFCurrentInstallationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFCurrentInstallationController.m; path = Parse/Parse/Internal/Installation/CurrentInstallationController/PFCurrentInstallationController.m; sourceTree = "<group>"; };
@@ -1126,7 +1126,6 @@
 				963A806C28641BE2C5F6C5AC73F5C72D /* Support Files */,
 				8BDFF2A06D6D7FE12D384CFBFCCB161B /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1136,7 +1135,6 @@
 				01127BD27C99796F27E5F235E9E547B6 /* Support Files */,
 				14B9A046DD4E09EAFD24B91022CB14E1 /* Tasks */,
 			);
-			name = Bolts;
 			path = Bolts;
 			sourceTree = "<group>";
 		};
@@ -1193,10 +1191,10 @@
 				F84B331B5D6AAF1548DD1BB004AE5C2A /* Bolts */,
 				0652F2476C7C87C6C0F6CB68072EA25F /* Parse */,
 				ED7ADA84A7005589821D254428CD2D26 /* Parse-Parse */,
-				F44831310C88EE4E454A4A36378CF37D /* Pods-capstone */,
+				F44831310C88EE4E454A4A36378CF37D /* libPods-capstone.a */,
 				A0408A11D4E4CD54472BED6109C8683C /* Pods-capstone-capstoneUITests */,
 				7F3B19CEB4357884F6628EC60EE2C2DB /* Pods-capstoneTests */,
-				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
+				C8C4578432714A1A74A7A0C4B4023447 /* libRSSelectionMenu.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1264,7 +1262,6 @@
 				B0BA963CC97A19C7F854F916216F11F5 /* ViewControllerExtension.swift */,
 				4E79BE37505E5B598AE44F4E4B90EA4E /* Support Files */,
 			);
-			name = RSSelectionMenu;
 			path = RSSelectionMenu;
 			sourceTree = "<group>";
 		};
@@ -1353,7 +1350,6 @@
 				DC093BEAC47C45CF68A2077A9A9D738C /* Core */,
 				B3C284195E3ACC3E0BD900698B2D571B /* Support Files */,
 			);
-			name = Parse;
 			path = Parse;
 			sourceTree = "<group>";
 		};
@@ -2181,7 +2177,7 @@
 			);
 			name = "Pods-capstone";
 			productName = "Pods-capstone";
-			productReference = F44831310C88EE4E454A4A36378CF37D /* Pods-capstone */;
+			productReference = F44831310C88EE4E454A4A36378CF37D /* libPods-capstone.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EAFFB8E885E2EDFD55062DE694143593 /* Parse-Parse */ = {
@@ -2216,7 +2212,7 @@
 			);
 			name = RSSelectionMenu;
 			productName = RSSelectionMenu;
-			productReference = C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */;
+			productReference = C8C4578432714A1A74A7A0C4B4023447 /* libRSSelectionMenu.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */

@@ -17,11 +17,11 @@
         self.Price = [productObject objectForKey:@"Price"];
         self.Ingredients = [productObject objectForKey:@"Ingredients"];
         self.Category = [productObject objectForKey:@"Category"];
-        self.upvoteCount = [productObject objectForKey:@"upvote_count"];
-        self.upvoted = [productObject objectForKey:@"upvoted"];
-        self.downvoteCount = [productObject objectForKey:@"downvote_count"];
-        self.downvoted = [productObject objectForKey:@"downvoted"];
-        self.bookmark = [productObject objectForKey:@"bookmark"];
+        //self.upvoteCount = [productObject objectForKey:@"upvote_count"];
+        //self.upvoted = [productObject objectForKey:@"upvoted"];
+        //self.downvoteCount = [productObject objectForKey:@"downvote_count"];
+        //self.downvoted = [productObject objectForKey:@"downvoted"];
+        //self.bookmark = [productObject objectForKey:@"bookmark"];
     }
     
     return self;

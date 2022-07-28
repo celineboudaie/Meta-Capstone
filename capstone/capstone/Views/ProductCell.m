@@ -39,29 +39,46 @@
     [self.downvote setTitle:downvoteString forState:UIControlStateNormal];
 }
 
-- (IBAction)tapUpvote:(id)sender {
-    if(self.product.upvoted == NO){
-        self.product.upvoted = YES;
-        self.product.upvoteCount += 1;
-        [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
-//        self.productObject = self.product;
-        [self refreshData];
+- (IBAction)tappedUpvote:(id)sender forEvent:(UIEvent *)event {
+    UITouch* touch = [[event allTouches] anyObject];
+       if (touch.tapCount == 2) {
+           self.product.upvoted = YES;
+           self.product.upvoteCount += 1;
+           [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
+   //        self.productObject = self.product;
+           [self refreshData];
 
-    }
-    else{
-        self.product.upvoted = NO;
-        self.product.upvoteCount -= 1;
-        [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart"] forState:UIControlStateNormal];
-        [self refreshData];
+       }
+       else{
+           self.product.upvoted = NO;
+           self.product.upvoteCount -= 1;
+           [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart"] forState:UIControlStateNormal];
+           [self refreshData];
+       }
+}
 
-}
+- (IBAction)tappedDownvote:(id)sender forEvent:(UIEvent *)event {
+    UITouch* touch = [[event allTouches] anyObject];
+       if (touch.tapCount == 2) {
+           self.product.downvoted = YES;
+           self.product.downvoteCount += 1;
+           [self.downvote setImage:[UIImage imageNamed:@"arrow.down.heart.fill"] forState:UIControlStateNormal];
+   //        self.productObject = self.product;
+           [self refreshData];
+
+       }
+       else{
+           self.product.downvoted = NO;
+           self.product.downvoteCount -= 1;
+           [self.downvote setImage:[UIImage imageNamed:@"arrow.down.heart"] forState:UIControlStateNormal];
+           [self refreshData];
+       }
 }
 
-- (IBAction)tapDownvote:(id)sender {
-    
-}
+
 
 - (IBAction)tapBookmark:(id)sender {
+    
 }
 
 @end
