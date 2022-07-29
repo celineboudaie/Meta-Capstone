@@ -16,7 +16,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray<Product *> *productResults;
 
-
 @end
 
 
@@ -26,12 +25,15 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+
     PFQuery *query = [PFQuery queryWithClassName:@"Product"];
     [query selectKeys:@[@"Name"]];
     [query selectKeys:@[@"Brand"]];
     [query selectKeys:@[@"Price"]];
     [query selectKeys:@[@"Ingredients"]];
     [query selectKeys:@[@"Category"]];
+    [query selectKeys:@[@"downvoteCount"]];
+    NSLog(@"%@", @"Category");
     
       [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
           if (!error) {
@@ -44,6 +46,7 @@
       }];
    
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
