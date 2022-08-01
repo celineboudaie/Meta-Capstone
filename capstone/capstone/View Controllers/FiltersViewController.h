@@ -6,12 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SkincareViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FiltersViewController : UIViewController
 
-@property (nonatomic, weak) id<FiltersViewControllerDelegate> delegate;
+@interface FiltersViewController : UIViewController 
+
+
 
 @end
 
