@@ -14,8 +14,8 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - BEMCheckBox (1.4.1)
   - Bolts/Tasks (1.9.1)
-  - MKDropdownMenu (1.4)
   - Parse (1.19.3):
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
@@ -23,22 +23,22 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - MKDropdownMenu
+  - BEMCheckBox
   - Parse
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - BEMCheckBox
     - Bolts
-    - MKDropdownMenu
     - Parse
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
-  MKDropdownMenu: 269df4a41d21a1db684ce8bc709befe419fc5bae
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
-PODFILE CHECKSUM: 29f7dbce4db78b5b1705adba8b033f8530a872ea
+PODFILE CHECKSUM: 721c482202fd143f17221f8183f54f0b2d095167
 
 COCOAPODS: 1.11.3

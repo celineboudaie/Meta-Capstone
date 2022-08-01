@@ -7,7 +7,7 @@ target 'capstone' do
   # Pods for capstone
 	pod 'Parse'
   pod 'AFNetworking'
-  pod 'MKDropdownMenu'
+  pod 'BEMCheckBox'
 
 
   target 'capstoneTests' do

@@ -32,8 +32,9 @@
     [query selectKeys:@[@"Price"]];
     [query selectKeys:@[@"Ingredients"]];
     [query selectKeys:@[@"Category"]];
+    [query selectKeys:@[@"upvoteCount"]];
     [query selectKeys:@[@"downvoteCount"]];
-    NSLog(@"%@", @"Category");
+    
     
       [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
           if (!error) {
