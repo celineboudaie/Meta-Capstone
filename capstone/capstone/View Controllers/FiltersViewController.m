@@ -163,7 +163,7 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//   SkincareViewController *skincareVC = [segue destinationViewController];
-//    skincareVC.productResults = productResults;
+   SkincareViewController *skincareVC = [segue destinationViewController];
+    skincareVC.productResults = productResults;
 }
 @end

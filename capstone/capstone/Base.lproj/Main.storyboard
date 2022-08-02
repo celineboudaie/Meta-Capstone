@@ -255,14 +255,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="kkD-e7-U9h"/>
                     <connections>
-                        <segue destination="wFe-Vr-qZ5" kind="presentation" identifier="skincareCellsSegue" id="a3j-Qx-AHS"/>
+                        <segue destination="wFe-Vr-qZ5" kind="show" identifier="skincareCellsSegue" id="a3j-Qx-AHS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cv8-S6-bzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4195.652173913044" y="48.883928571428569"/>
         </scene>
-        <!--Skincare-->
+        <!--Skincare View Controller-->
         <scene sceneID="WAO-MT-Zfr">
             <objects>
                 <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="wFe-Vr-qZ5" customClass="SkincareViewController" sceneMemberID="viewController">
@@ -377,7 +377,9 @@
                             <constraint firstItem="Fgx-rt-kTe" firstAttribute="trailing" secondItem="ELK-5w-9d0" secondAttribute="trailing" id="fep-DR-wA4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Skincare" id="qjV-oU-OWe"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qjV-oU-OWe"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Fgx-rt-kTe" id="cm3-q2-o9U"/>
                     </connections>
