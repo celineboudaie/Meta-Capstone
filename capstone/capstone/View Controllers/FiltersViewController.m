@@ -44,10 +44,12 @@
       }];
 }
 
-
+- (void) wait {
+    [self performSegueWithIdentifier:@"skincareCellsSegue" sender:nil];
+}
 
 - (IBAction)submitTapped:(id)sender {
-
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(wait) userInfo:nil repeats:NO];
 }
 
 //Categories
@@ -55,7 +57,6 @@
         NSPredicate *categoryFaceWash = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'face wash'"];
         NSArray *isFaceWash = [self.productResults filteredArrayUsingPredicate:categoryFaceWash];
         NSLog(@"%@",isFaceWash);
-        [self performSegueWithIdentifier:@"skincareCellsSegue" sender:nil];
 }
 
 - (IBAction)moisturizer:(id)sender {
@@ -93,6 +94,7 @@
     [self performSegueWithIdentifier:@"skincareCellsSegue" sender:nil];
 }
 
+
 //Filters
 - (IBAction)filter1:(id)sender {
     NSPredicate *filterOne = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'fragrance'"];
@@ -108,14 +110,60 @@
     //remove from filteredProduct Results
 }
 
+- (IBAction)filter3:(id)sender {
+    NSPredicate *filterThree = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'alcohol'"];
+    NSArray *filterAlcohol = [self.productResults filteredArrayUsingPredicate:filterThree];
+    NSLog(@"%@",filterAlcohol);
+    //remove from filteredProduct Results
+}
 
+- (IBAction)filter4:(id)sender {
+    NSPredicate *filterFour = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'paraben'"];
+    NSArray *filterParaben = [self.productResults filteredArrayUsingPredicate:filterFour];
+    NSLog(@"%@",filterParaben);
+    //remove from filteredProduct Results
+}
 
+- (IBAction)filter5:(id)sender {
+    NSPredicate *filterFive = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'sulfate'"];
+    NSArray *filterSulfate = [self.productResults filteredArrayUsingPredicate:filterFive];
+    NSLog(@"%@",filterSulfate);
+    //remove from filteredProduct Results
+}
+
+- (IBAction)filter6:(id)sender {
+    NSPredicate *filterSix = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'formaldehydes'"];
+    NSArray *filterSulfate = [self.productResults filteredArrayUsingPredicate:filterSix];
+    NSLog(@"%@",filterSulfate);
+    //remove from filteredProduct Results
+}
+
+- (IBAction)filter7:(id)sender {
+    NSPredicate *filterSeven = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'triclocarban'"];
+    NSArray *filterTriclocarban = [self.productResults filteredArrayUsingPredicate:filterSeven];
+    NSLog(@"%@",filterTriclocarban);
+    //remove from filteredProduct Results
+}
+
+- (IBAction)filter8:(id)sender {
+    NSPredicate *filterEight = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'triclosan'"];
+    NSArray *filterTriclosan = [self.productResults filteredArrayUsingPredicate:filterEight];
+    NSLog(@"%@",filterTriclosan);
+    //remove from filteredProduct Results
+}
+
+- (IBAction)filter9:(id)sender {
+    NSPredicate *filterNine = [NSPredicate predicateWithFormat:@"Ingredients contains[c] 'benzaldehyde'"];
+    NSArray *filterBenzaldehyde = [self.productResults filteredArrayUsingPredicate:filterNine];
+    NSLog(@"%@",filterBenzaldehyde);
+    //remove from filteredProduct Results
+}
 
 
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 //   SkincareViewController *skincareVC = [segue destinationViewController];
-//   skincareVC.filteredProductResults = filteredProductResults;
+//    skincareVC.productResults = productResults;
 }
 @end
