@@ -68,7 +68,7 @@
     NSLog(@"%@",isMoisturizer);
 }
 
-- (IBAction)suncreen:(id)sender {
+- (IBAction)sunscreen:(id)sender {
     NSPredicate *categorySunscreen = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'sunscreen'"];
     NSArray *isSunscreen = [self.productResults filteredArrayUsingPredicate:categorySunscreen];
     [self.filteredProductResults addObjectsFromArray:isSunscreen];

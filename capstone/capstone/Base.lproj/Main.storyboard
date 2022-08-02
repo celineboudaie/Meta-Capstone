@@ -129,7 +129,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Sunscreen"/>
                                 <connections>
-                                    <action selector="suncreen:" destination="UtP-98-1lo" eventType="touchUpInside" id="RQB-HC-trD"/>
+                                    <action selector="sunscreen:" destination="UtP-98-1lo" eventType="touchUpInside" id="4dR-ua-ysF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikm-cv-3DV">
