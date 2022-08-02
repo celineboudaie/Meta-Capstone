@@ -6,10 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SkincareViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FiltersViewController : UIViewController
+
+@interface FiltersViewController : UIViewController 
+
+
 
 @end
 

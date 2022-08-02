@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B816B46C5A9461F9C37C2067CFFECABA"
-               BuildableName = "libMKDropdownMenu.a"
-               BlueprintName = "MKDropdownMenu"
+               BlueprintIdentifier = "B4315C804D18AF023D6D89A8281BF589"
+               BuildableName = "libBEMCheckBox.a"
+               BlueprintName = "BEMCheckBox"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

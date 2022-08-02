@@ -11,6 +11,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "Parse/Parse.h"
 #import "ProductDetailsViewController.h"
+#import "FiltersViewController.h"
 
 @interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -21,46 +22,31 @@
 
 @implementation SkincareViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-
-    PFQuery *query = [PFQuery queryWithClassName:@"Product"];
-    [query selectKeys:@[@"Name"]];
-    [query selectKeys:@[@"Brand"]];
-    [query selectKeys:@[@"Price"]];
-    [query selectKeys:@[@"Ingredients"]];
-    [query selectKeys:@[@"Category"]];
-    [query selectKeys:@[@"downvoteCount"]];
-    NSLog(@"%@", @"Category");
-    
-      [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
-          if (!error) {
-              self.productResults = objects;
-              NSLog(@"%@",self.productResults);
-              [self.tableView reloadData];
-          } else {
-              NSLog(@"Error: %@ %@", error, [error userInfo]);
-          }
-      }];
-   
 }
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
-    cell.product = self.productResults[indexPath.row];
+    cell.product = self.filteredProductResults[indexPath.row];
     return cell;
 }
         
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.productResults.count;
+    return self.filteredProductResults.count;
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //Getting filtered product results from filters view controller
     NSIndexPath *senderIndex = [self.tableView indexPathForCell:sender];
-    NSDictionary *products = self.productResults[senderIndex.row];
+    NSDictionary *products = self.filteredProductResults[senderIndex.row];
+    //For Details View Controller
     ProductDetailsViewController *detailVC = [segue destinationViewController];
     detailVC.products = products;
 }
