@@ -190,8 +190,8 @@
 			children = (
 				728E4F552878D84C00B52388 /* FiltersViewController.m */,
 				728E4F4E2878B4EA00B52388 /* SkincareViewController.m */,
-				728E4F542878D84C00B52388 /* FiltersViewController.h */,
 				728E4F4D2878B4EA00B52388 /* SkincareViewController.h */,
+				728E4F542878D84C00B52388 /* FiltersViewController.h */,
 				720A977E287CAABF00FCA861 /* LoginViewController.m */,
 				720A977D287CAABF00FCA861 /* LoginViewController.h */,
 				728E4F5B2878D89300B52388 /* HomeViewController.m */,

@@ -16,7 +16,6 @@
 @interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray<Product *> *productResults;
-@property (strong, nonatomic) NSArray<Product *> *filteredProductResults;
 
 @end
 
