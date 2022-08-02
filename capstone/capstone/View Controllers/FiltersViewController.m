@@ -31,6 +31,7 @@
     [query selectKeys:@[@"Category"]];
     [query selectKeys:@[@"upvoteCount"]];
     [query selectKeys:@[@"downvoteCount"]];
+    query.limit = 2000;
     
     
       [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {

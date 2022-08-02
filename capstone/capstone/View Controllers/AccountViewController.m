@@ -10,7 +10,10 @@
 #import "SceneDelegate.h"
 #import "Parse/Parse.h"
 
+
 @interface AccountViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *fullName;
+@property (strong, nonatomic) IBOutlet UITextField *userLocation;
 
 @end
 
@@ -18,8 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
+- (IBAction)submitInfo:(id)sender {
+    [PFUser.currentUser setValue:self.fullName.text forKey:@"fullName"];
+    [PFUser.currentUser setValue:self.userLocation.text forKey:@"city"];
+    [PFUser.currentUser save];
+}
+
+
+
 - (IBAction)didTapLogout:(id)sender {
     SceneDelegate *mySceneDelegate = (SceneDelegate * )
     UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
