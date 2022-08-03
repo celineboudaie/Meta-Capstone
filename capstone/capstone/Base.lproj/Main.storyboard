@@ -67,17 +67,53 @@
             </objects>
             <point key="canvasLocation" x="1609" y="-895"/>
         </scene>
-        <!--Home Feed-->
+        <!--Trending Skincare Products-->
         <scene sceneID="Gv8-Hq-RkP">
             <objects>
                 <viewController id="4yT-jz-HVs" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQY-Le-MJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B39-GA-bwM">
+                                <rect key="frame" x="184" y="88" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-qh-zeH">
+                                <rect key="frame" x="124" y="117" width="33" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="$"/>
+                                <connections>
+                                    <action selector="onePriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="nDq-fQ-Iy6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-DN-jCw">
+                                <rect key="frame" x="222" y="117" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="$$$"/>
+                                <connections>
+                                    <action selector="threePriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="dPj-ZV-SHq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Lf-0kg">
+                                <rect key="frame" x="172" y="117" width="42" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="$$"/>
+                                <connections>
+                                    <action selector="twoPriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="1tr-Ne-fWT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vvu-cu-yFA"/>
                         <color key="backgroundColor" red="0.93882567307935594" green="0.97394164801401872" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Feed" id="34J-GT-7lc"/>
+                    <navigationItem key="navigationItem" title="Trending Skincare Products" id="34J-GT-7lc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ko-0X-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,6 +291,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kkD-e7-U9h"/>
                     <connections>
+                        <outlet property="checkBox" destination="qOE-gG-bBf" id="jTE-Bi-KmG"/>
                         <segue destination="wFe-Vr-qZ5" kind="show" identifier="skincareCellsSegue" id="a3j-Qx-AHS"/>
                     </connections>
                 </viewController>
@@ -302,7 +339,7 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title=""/>
                                                             <connections>
-                                                                <action selector="tappedUpvote:forEvent:" destination="CGi-x4-pXT" eventType="touchUpInside" id="KT1-lb-p0f"/>
+                                                                <action selector="tappedUpvote:" destination="CGi-x4-pXT" eventType="touchUpInside" id="fUe-UN-1Jh"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-Ff-dL2">
@@ -391,7 +428,7 @@
         <!--Learn More About Filters-->
         <scene sceneID="kJr-VH-Wrl">
             <objects>
-                <viewController id="8Dj-86-Cyh" sceneMemberID="viewController">
+                <viewController id="8Dj-86-Cyh" customClass="LearnMoreViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOQ-Vw-lkO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

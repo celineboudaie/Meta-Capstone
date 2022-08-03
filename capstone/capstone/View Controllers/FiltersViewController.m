@@ -15,11 +15,15 @@
 @interface FiltersViewController ()
 @property (strong, nonatomic) NSArray<Product *> *productResults;
 @property (strong, nonatomic) NSMutableArray<Product *> *filteredProductResults;
+@property (strong, nonatomic) IBOutlet BEMCheckBox *checkBox;
 
 
 @end
 
 @implementation FiltersViewController
+-(void) viewWillAppear:(BOOL)animated{
+    self.checkBox.on = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
