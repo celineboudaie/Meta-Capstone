@@ -9,7 +9,7 @@
 #import "Parse/Parse.h"
 #import "Product.h"
 #import "ProductCell.h"
-
+#import "UIImageView+AFNetworking.h"
 
 
 @interface HomeViewController ()
@@ -22,16 +22,22 @@
     [super viewDidLoad];
 }
 
+- (IBAction)onePriceFilter:(id)sender {
+}
+
+- (IBAction)twoPriceFilter:(id)sender {
+}
+
+- (IBAction)threePriceFilter:(id)sender {
+}
 
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //Getting filtered product results from filters view controller
+//    NSIndexPath *senderIndex = [self.tableView indexPathForCell:sender];
+//    NSDictionary *products = self.filteredProductResults[senderIndex.row];
 }
-*/
 
 @end
