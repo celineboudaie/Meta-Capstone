@@ -9,6 +9,7 @@
 #import "ProductCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "Product.h"
+#import "Parse/Parse.h"
 
 @interface ProductDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *productBrand;
@@ -26,7 +27,10 @@
     self.productBrand.text = self.products[@"Brand"];
     self.productPrice.text = self.products[@"Price"];
     self.Ingredients.text = self.products[@"Ingredients"];
-    
+    NSString *URLString = self.products[@"ImageURL"];
+    NSURL *url = [NSURL URLWithString:URLString];
+    self.productImage.image = nil;
+    [self.productImage setImageWithURL:url];
 }
 
 
