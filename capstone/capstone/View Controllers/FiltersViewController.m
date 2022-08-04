@@ -36,6 +36,7 @@
     [query selectKeys:@[@"Category"]];
     [query selectKeys:@[@"ImageURL"]];
     [query selectKeys:@[@"ProductURL"]];
+    [query selectKeys:@[@"ID"]];
     query.limit = 2000;
     
     

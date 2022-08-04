@@ -366,8 +366,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I66-Ns-ygG">
-                                                    <rect key="frame" x="68" y="155" width="39" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I66-Ns-ygG">
+                                                    <rect key="frame" x="41" y="155" width="66" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -423,9 +423,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a3-4m-1n8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5048" y="49"/>
+            <point key="canvasLocation" x="5047.826086956522" y="48.883928571428569"/>
         </scene>
-        <!--Learn More About Filters-->
+        <!--Learn More About Each Filter-->
         <scene sceneID="kJr-VH-Wrl">
             <objects>
                 <viewController id="8Dj-86-Cyh" customClass="LearnMoreViewController" sceneMemberID="viewController">
@@ -520,7 +520,7 @@
                         <viewLayoutGuide key="safeArea" id="WQ4-Sn-Igo"/>
                         <color key="backgroundColor" red="0.93882567309999998" green="0.97394164800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Learn More About Filters" id="V2r-IO-HLs"/>
+                    <navigationItem key="navigationItem" title="Learn More About Each Filter" id="V2r-IO-HLs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyd-e6-d6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

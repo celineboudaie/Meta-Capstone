@@ -22,12 +22,15 @@
     [super viewDidLoad];
 }
 
+- (nonnull BFTask<NSNumber *> *)countObjectsInBackground;
+
 if(PFUser.currentUser.city .ContainsKey){
     
 }
 else{
     
 }
+
 
 - (IBAction)onePriceFilter:(id)sender {
     
