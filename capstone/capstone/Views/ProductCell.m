@@ -28,6 +28,14 @@
     self.productName.text = self.product.Name;
     self.productBrand.text = self.product.Brand;
     self.productPrice.text = self.product.Price;
+    
+    
+    NSString *URLString = self.product.ImageURL;
+    NSURL *url = [NSURL URLWithString:URLString];
+    self.productImage.image = nil;
+    [self.productImage setImageWithURL:url];
+    
+    
     [self refreshData];
 }
 
@@ -40,27 +48,46 @@
 }
 
 
--(instancetype)initWithCoder:(NSCoder *)coder{
-    if(self = [super initWithCoder:coder]){
-        UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didDoubleTap:)];
-        [doubleTapGesture setNumberOfTapsRequired:2];
-        [self addGestureRecognizer:doubleTapGesture];
-    }
-    return self;
-}
 
+//-(instancetype)initWithCoder:(NSCoder *)coder{
+//    if(self = [super initWithCoder:coder]){
+//        UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didDoubleTap:)];
+//        [doubleTapGesture setNumberOfTapsRequired:2];
+//        [self addGestureRecognizer:doubleTapGesture];
+//    }
+//    return self;
+//}
+//
 //-(void) didDoubleTap: (UITapGestureRecognizer *)recognizer {
 //    [self.delegate tappedUpvote:self.product];
 //}
 
+//- (void) didDoubleTap {
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+//    tapGesture.numberOfTapsRequired = 2;
+//    [self.view addGestureRecognizer:tapGesture];
+//    [tapGesture release];
+//}
 
-- (IBAction)tappedUpvote:(id)sender {
-    if () {
+- (IBAction)tappedUpvote:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateRecognized) {
+//        //Ading UserID and ProductID to parse
+//        PFObject *newVote = [PFObject vote];
+//        
+//        // set user properties
+//        newVote.ProductID = ;
+//        newVote.UserID = current;
+//        current
+//        
+//        [PFUser.currentUser setValue:self.fullName.text forKey:@"fullName"];
+//        [PFUser.currentUser setValue:self.userLocation.text forKey:@"city"];
+//        [PFUser.currentUser save];
+        
+        
         self.product.upvoted = YES;
         self.product.upvoteCount += 1;
         [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
         [self refreshData];
-
     }
     else{
         self.product.upvoted = NO;

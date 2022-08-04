@@ -23,12 +23,15 @@
 }
 
 - (IBAction)onePriceFilter:(id)sender {
+    
 }
 
 - (IBAction)twoPriceFilter:(id)sender {
+    
 }
 
 - (IBAction)threePriceFilter:(id)sender {
+    
 }
 
 

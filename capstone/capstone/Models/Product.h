@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *Price;
 @property (nonatomic, strong) NSString *Ingredients;
 @property (nonatomic, strong) NSString *Category;
+@property (nonatomic, strong) NSString *ImageURL;
+@property (nonatomic, strong) NSString *ProductURL;
 @property (nonatomic) int upvoteCount;
 @property (nonatomic) BOOL upvoted;
 @property (nonatomic) int downvoteCount;

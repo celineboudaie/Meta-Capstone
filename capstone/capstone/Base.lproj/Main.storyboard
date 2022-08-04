@@ -82,17 +82,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-qh-zeH">
-                                <rect key="frame" x="124" y="117" width="33" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="$"/>
-                                <connections>
-                                    <action selector="onePriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="nDq-fQ-Iy6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-DN-jCw">
-                                <rect key="frame" x="222" y="117" width="51" height="31"/>
+                                <rect key="frame" x="247" y="117" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="$$$"/>
@@ -101,12 +92,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Lf-0kg">
-                                <rect key="frame" x="172" y="117" width="42" height="31"/>
+                                <rect key="frame" x="172" y="117" width="58" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="$$"/>
                                 <connections>
                                     <action selector="twoPriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="1tr-Ne-fWT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-qh-zeH">
+                                <rect key="frame" x="115" y="117" width="33" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="$"/>
+                                <connections>
+                                    <action selector="onePriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="nDq-fQ-Iy6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ko-0X-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="49"/>
+            <point key="canvasLocation" x="2311.594202898551" y="48.883928571428569"/>
         </scene>
         <!--Filters View Controller-->
         <scene sceneID="gZB-b6-JhD">
@@ -537,23 +537,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Si-uO6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Si-uO6">
                                 <rect key="frame" x="5" y="10" width="404" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4d-1A-ngW">
-                                <rect key="frame" x="5" y="117" width="404" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4d-1A-ngW">
+                                <rect key="frame" x="5" y="82" width="404" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-tJ-cpU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-tJ-cpU">
                                 <rect key="frame" x="144" y="445" width="127" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -572,8 +569,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-Bg-06Z">
-                                <rect key="frame" x="90" y="224" width="234" height="198"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-Bg-06Z">
+                                <rect key="frame" x="132" y="224" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Cx4-HQ-Hhs"/>
                                     <constraint firstAttribute="height" constant="125" id="RM9-Dk-3z5"/>
@@ -582,6 +579,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bdr-QP-HyV"/>
                         <color key="backgroundColor" red="0.93882567309999998" green="0.97394164800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="I4d-1A-ngW" secondAttribute="centerX" id="A4l-pe-dtq"/>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="top" secondItem="LDg-df-Avw" secondAttribute="top" constant="224" id="E7d-Kz-ptd"/>
+                            <constraint firstItem="dMx-tJ-cpU" firstAttribute="top" secondItem="UPm-Bg-06Z" secondAttribute="bottom" constant="23" id="Xfe-Dn-c0p"/>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="dMx-tJ-cpU" secondAttribute="centerX" id="fOX-oC-Aue"/>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="top" secondItem="I4d-1A-ngW" secondAttribute="bottom" constant="8" id="lKU-Uv-xvi"/>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="LDg-df-Avw" secondAttribute="centerX" id="nDz-c7-5Pj"/>
+                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="IxI-Si-uO6" secondAttribute="centerX" id="pMe-8n-rgf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Ingredients" destination="lk0-nv-aWH" id="erY-Wu-stI"/>

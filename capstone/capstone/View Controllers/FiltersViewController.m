@@ -27,14 +27,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_filteredProductResults removeAllObjects];
     PFQuery *query = [PFQuery queryWithClassName:@"Product"];
     [query selectKeys:@[@"Name"]];
     [query selectKeys:@[@"Brand"]];
     [query selectKeys:@[@"Price"]];
     [query selectKeys:@[@"Ingredients"]];
     [query selectKeys:@[@"Category"]];
-    [query selectKeys:@[@"upvoteCount"]];
-    [query selectKeys:@[@"downvoteCount"]];
+    [query selectKeys:@[@"ImageURL"]];
+    [query selectKeys:@[@"ProductURL"]];
     query.limit = 2000;
     
     
@@ -60,42 +61,42 @@
 
 //Categories
 - (IBAction)faceWash:(id)sender {
-        NSPredicate *categoryFaceWash = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'face wash'"];
+        NSPredicate *categoryFaceWash = [NSPredicate predicateWithFormat:@"Category = 'face wash'"];
         NSArray *isFaceWash = [self.productResults filteredArrayUsingPredicate:categoryFaceWash];
         [self.filteredProductResults addObjectsFromArray:isFaceWash];
         NSLog(@"%@",_filteredProductResults);
 }
 
 - (IBAction)moisturizer:(id)sender {
-    NSPredicate *categoryMoisturizer = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'face moisturizer'"];
+    NSPredicate *categoryMoisturizer = [NSPredicate predicateWithFormat:@"Category = 'face moisturizer'"];
     NSArray *isMoisturizer = [self.productResults filteredArrayUsingPredicate:categoryMoisturizer];
     [self.filteredProductResults addObjectsFromArray:isMoisturizer];
     NSLog(@"%@",isMoisturizer);
 }
 
 - (IBAction)sunscreen:(id)sender {
-    NSPredicate *categorySunscreen = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'sunscreen'"];
+    NSPredicate *categorySunscreen = [NSPredicate predicateWithFormat:@"Category = 'sunscreen'"];
     NSArray *isSunscreen = [self.productResults filteredArrayUsingPredicate:categorySunscreen];
     [self.filteredProductResults addObjectsFromArray:isSunscreen];
     NSLog(@"%@",isSunscreen);
 }
 
 - (IBAction)eyeCream:(id)sender {
-    NSPredicate *categoryEyeCream = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'eye cream'"];
+    NSPredicate *categoryEyeCream = [NSPredicate predicateWithFormat:@"Category = 'eye cream'"];
     NSArray *isEyeCream = [self.productResults filteredArrayUsingPredicate:categoryEyeCream];
     [self.filteredProductResults addObjectsFromArray:isEyeCream];
     NSLog(@"%@",isEyeCream);
 }
 
 - (IBAction)makeupRemover:(id)sender {
-    NSPredicate *categoryMakeupRemover = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'makeup remover'"];
+    NSPredicate *categoryMakeupRemover = [NSPredicate predicateWithFormat:@"Category = 'makeup remover'"];
     NSArray *isMakeupRemover = [self.productResults filteredArrayUsingPredicate:categoryMakeupRemover];
     [self.filteredProductResults addObjectsFromArray:isMakeupRemover];
     NSLog(@"%@",isMakeupRemover);
 }
 
 - (IBAction)toner:(id)sender {
-    NSPredicate *categoryToner = [NSPredicate predicateWithFormat:@"Category beginswith[c] 'toner'"];
+    NSPredicate *categoryToner = [NSPredicate predicateWithFormat:@"Category = 'toner'"];
     NSArray *isToner = [self.productResults filteredArrayUsingPredicate:categoryToner];
     [self.filteredProductResults addObjectsFromArray:isToner];
     NSLog(@"%@",isToner);
