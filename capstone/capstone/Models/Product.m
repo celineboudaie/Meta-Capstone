@@ -19,6 +19,7 @@
         self.Category = [productObject objectForKey:@"Category"];
         self.ImageURL = [productObject objectForKey:@"ImageURL"];
         self.ProductURL = [productObject objectForKey:@"ProductURL"];
+        self.ID = [productObject objectForKey:@"ID"];
         //self.upvoteCount = [productObject objectForKey:@"upvote_count"];
         //self.downvoteCount = [productObject objectForKey:@"downvote_count"];
     }

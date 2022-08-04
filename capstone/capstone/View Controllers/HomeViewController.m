@@ -22,6 +22,13 @@
     [super viewDidLoad];
 }
 
+if(PFUser.currentUser.city .ContainsKey){
+    
+}
+else{
+    
+}
+
 - (IBAction)onePriceFilter:(id)sender {
     
 }

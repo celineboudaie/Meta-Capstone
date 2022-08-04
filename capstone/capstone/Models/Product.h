@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *Category;
 @property (nonatomic, strong) NSString *ImageURL;
 @property (nonatomic, strong) NSString *ProductURL;
+@property (nonatomic, strong) NSString *ID;
 @property (nonatomic) int upvoteCount;
 @property (nonatomic) BOOL upvoted;
 @property (nonatomic) int downvoteCount;

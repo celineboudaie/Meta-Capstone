@@ -10,7 +10,8 @@
 #import "AppDelegate.h"
 #import "Product.h"
 #import "SkincareViewController.h"
-
+#import "SkincareViewController.h"
+#import "Parse/Parse.h"
 
 
 @implementation ProductCell
@@ -71,17 +72,10 @@
 
 - (IBAction)tappedUpvote:(UITapGestureRecognizer *)sender {
     if (sender.state == UIGestureRecognizerStateRecognized) {
-//        //Ading UserID and ProductID to parse
-//        PFObject *newVote = [PFObject vote];
-//        
-//        // set user properties
-//        newVote.ProductID = ;
-//        newVote.UserID = current;
-//        current
-//        
-//        [PFUser.currentUser setValue:self.fullName.text forKey:@"fullName"];
-//        [PFUser.currentUser setValue:self.userLocation.text forKey:@"city"];
-//        [PFUser.currentUser save];
+        //Ading UserID and ProductID to parse
+        PFObject *newVote = [PFObject objectWithClassName:@"Vote"];
+        newVote[@"ProductID"] = self.product.ID;
+        newVote[@"UserID"] = PFUser.currentUser.objectId;
         
         
         self.product.upvoted = YES;
