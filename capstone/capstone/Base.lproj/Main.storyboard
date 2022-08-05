@@ -713,12 +713,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Si-uO6">
-                                <rect key="frame" x="5" y="10" width="404" height="99"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qI5-CJ-qAf" customClass="FBShimmeringView">
+                                <rect key="frame" x="43" y="60" width="327" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Si-uO6">
+                                        <rect key="frame" x="75" y="14" width="185" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4d-1A-ngW">
                                 <rect key="frame" x="5" y="82" width="404" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -762,7 +770,6 @@
                             <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="dMx-tJ-cpU" secondAttribute="centerX" id="fOX-oC-Aue"/>
                             <constraint firstItem="UPm-Bg-06Z" firstAttribute="top" secondItem="I4d-1A-ngW" secondAttribute="bottom" constant="8" id="lKU-Uv-xvi"/>
                             <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="LDg-df-Avw" secondAttribute="centerX" id="nDz-c7-5Pj"/>
-                            <constraint firstItem="UPm-Bg-06Z" firstAttribute="centerX" secondItem="IxI-Si-uO6" secondAttribute="centerX" id="pMe-8n-rgf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -771,6 +778,7 @@
                         <outlet property="productImage" destination="UPm-Bg-06Z" id="fke-PU-Br6"/>
                         <outlet property="productName" destination="I4d-1A-ngW" id="dTy-oC-ewd"/>
                         <outlet property="productPrice" destination="dMx-tJ-cpU" id="jcE-eL-ZoV"/>
+                        <outlet property="shimmeringViewAnimation" destination="qI5-CJ-qAf" id="zKM-Jv-HCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVu-db-EMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

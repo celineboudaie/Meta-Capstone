@@ -10,6 +10,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "Product.h"
 #import "Parse/Parse.h"
+#import "FBShimmeringView.h"
 
 @interface ProductDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *productBrand;
@@ -17,12 +18,16 @@
 @property (strong, nonatomic) IBOutlet UILabel *productPrice;
 @property (strong, nonatomic) IBOutlet UILabel *Ingredients;
 @property (strong, nonatomic) IBOutlet UIImageView *productImage;
+@property (strong, nonatomic) IBOutlet FBShimmeringView *shimmeringViewAnimation;
+
 
 @end
 
 @implementation ProductDetailsViewController
 
 - (void)viewDidLoad {
+    self.shimmeringViewAnimation.contentView = self.productBrand;
+    self.shimmeringViewAnimation.shimmering = YES;
     self.productName.text = self.products[@"Name"];
     self.productBrand.text = self.products[@"Brand"];
     self.productPrice.text = self.products[@"Price"];

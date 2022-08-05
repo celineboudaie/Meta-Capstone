@@ -16,10 +16,8 @@
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSArray<Product *> *trendingResults;
-@property (strong, nonatomic) NSArray<Product *> *voteResults;
+@property (strong, nonatomic) NSArray<PFObject *> *voteResults;
 @property (strong, nonatomic) IBOutlet UITableView *trendingTableView;
-@property (strong, nonatomic) NSArray<Product *> *trendingByLocation;
-
 
 
 @end
@@ -30,10 +28,11 @@
     [super viewDidLoad];
     self.trendingTableView.dataSource = self;
     self.trendingTableView.delegate = self;
+    [self refreshTrending];
 }
 
 
-- (IBAction)refreshTrending:(id)sender {
+- (void)refreshTrending {
     PFQuery *voteQuery = [PFQuery queryWithClassName:@"Vote"];
     [voteQuery selectKeys:@[@"ProductID"]];
     [voteQuery selectKeys:@[@"UserID"]];
@@ -82,6 +81,7 @@
                         NSString *second = [voteCount objectForKey:b[@"ID"]];
                         return [second compare:first];
                     }];
+                    [self.trendingTableView reloadData];
 
                     NSLog(@"%@",self.trendingResults);
 
@@ -95,12 +95,11 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+    
 
 }
 
-//get current user location
-//find all upvotes with same location
-//display sorted upvotes
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
@@ -115,14 +114,6 @@
 
 
 
-
-//remove products w/price that doesnt fall in range
-- (IBAction)onePriceFilter:(id)sender {
-}
-- (IBAction)twoPriceFilter:(id)sender {
-}
-- (IBAction)threePriceFilter:(id)sender {
-}
 
 
 #pragma mark - Navigation

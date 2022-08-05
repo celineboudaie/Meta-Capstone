@@ -8,6 +8,7 @@ target 'capstone' do
 	pod 'Parse'
   pod 'AFNetworking'
   pod 'BEMCheckBox'
+  pod 'Shimmer'
 
 
   target 'capstoneTests' do

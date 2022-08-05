@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Product : NSObject
+
 - (instancetype)initWithPFObject:(PFObject *)productObject;
 @property (nonatomic, strong) NSString *Name;
 @property (nonatomic, strong) NSString *Brand;

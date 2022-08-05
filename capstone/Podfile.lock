@@ -20,11 +20,13 @@ PODS:
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
     - Bolts/Tasks (= 1.9.1)
+  - Shimmer (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking
   - BEMCheckBox
   - Parse
+  - Shimmer
 
 SPEC REPOS:
   trunk:
@@ -32,13 +34,15 @@ SPEC REPOS:
     - BEMCheckBox
     - Bolts
     - Parse
+    - Shimmer
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
 
-PODFILE CHECKSUM: 721c482202fd143f17221f8183f54f0b2d095167
+PODFILE CHECKSUM: b7820144be4e0204fa070001a1bd46c9d522d088
 
 COCOAPODS: 1.11.3
