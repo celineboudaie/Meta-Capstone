@@ -27,9 +27,15 @@
     self.checkBox.on = NO;
 }
 
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    
+    [self viewDidLoad];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_filteredProductResults removeAllObjects];
+    self.filteredProductResults = [[NSMutableArray alloc]init];
     PFQuery *query = [PFQuery queryWithClassName:@"Product"];
     [query selectKeys:@[@"Name"]];
     [query selectKeys:@[@"Brand"]];
