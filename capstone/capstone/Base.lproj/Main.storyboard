@@ -499,7 +499,7 @@
                                             <outlet property="productName" destination="wlo-8w-cTR" id="JTb-6d-VRE"/>
                                             <outlet property="productPrice" destination="I66-Ns-ygG" id="2Ai-Z2-BoS"/>
                                             <outlet property="upvote" destination="oIT-lb-llC" id="bfQ-7H-5JZ"/>
-                                            <segue destination="KY3-FX-TVy" kind="presentation" id="eWD-r3-g57"/>
+                                            <segue destination="KY3-FX-TVy" kind="presentation" identifier="skincareVCToDetails" id="eWD-r3-g57"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -45,11 +45,22 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //Getting filtered product results from filters view controller
     NSIndexPath *senderIndex = [self.tableView indexPathForCell:sender];
-    NSDictionary *products = self.filteredProductResults[senderIndex.row];
+    NSDictionary *products = [self productToDictionary:self.filteredProductResults[senderIndex.row]];
     //For Details View Controller
     ProductDetailsViewController *detailVC = [segue destinationViewController];
     detailVC.products = products;
 }
+- (void)didDoubleTap:(nonnull Product *)product {
+    [self performSegueWithIdentifier:@"skincareVCToDetails" sender:nil];
+}
+
+-(NSDictionary*) productToDictionary:(PFObject *)product {
+    NSDictionary *productDictionary = [NSDictionary dictionaryWithObjectsAndKeys:product[@"Name"], @"Name", product[@"Brand"], @"Brand", product[@"Price"], @"Price", product[@"Ingredients"], @"Ingredients", product[@"ImageURL"], @"ImageURL", nil];
+    return productDictionary;
+    
+    
+}
+
 @end
         
         

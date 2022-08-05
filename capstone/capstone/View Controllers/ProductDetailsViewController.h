@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ProductDetailsViewController : UIViewController
-@property(weak, nonatomic) NSDictionary *products;
+@property(nonatomic) NSDictionary *products;
 @end
 
 

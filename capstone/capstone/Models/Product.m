@@ -10,6 +10,7 @@
 
 @implementation Product
 - (instancetype)initWithPFObject:(PFObject *)productObject {
+    [productObject fetchIfNeeded];
     self = [super init];
     if(self){
         self.Name = [productObject objectForKey:@"Name"];
