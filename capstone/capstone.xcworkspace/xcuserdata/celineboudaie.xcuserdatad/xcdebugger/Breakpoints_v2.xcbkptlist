@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7DB61EDA-5082-42D7-8D89-DF933DA19FB2"
-            shouldBeEnabled = "No"
+            uuid = "23473B25-02A0-4BE8-A202-347BF0E53EB8"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "capstone/View Controllers/HomeViewController.m"
+            filePath = "capstone/View Controllers/FiltersViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-refreshTrending:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10EDB84F-60DB-4060-86FA-8E98A15C7BE0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "capstone/View Controllers/HomeViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-refreshTrending:"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-filter2:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
