@@ -9,6 +9,8 @@
 #import "Product.h"
 #import "ProductCell.h"
 #import "SkincareViewController.h"
+#import "HomeViewController.h"
+
 #import "BEMCheckBox.h"
 
 
@@ -51,6 +53,7 @@
       }];
     self.filteredProductResults =  [[NSMutableArray alloc] init];
 }
+
 
 - (void) waitBeforeSegue {
     [self performSegueWithIdentifier:@"skincareCellsSegue" sender:nil];
@@ -174,5 +177,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
    SkincareViewController *skincareVC = [segue destinationViewController];
     skincareVC.filteredProductResults = _filteredProductResults;
+    
 }
 @end

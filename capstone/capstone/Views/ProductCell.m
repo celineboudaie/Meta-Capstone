@@ -50,60 +50,58 @@
 
 
 
-//-(instancetype)initWithCoder:(NSCoder *)coder{
-//    if(self = [super initWithCoder:coder]){
-//        UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didDoubleTap:)];
-//        [doubleTapGesture setNumberOfTapsRequired:2];
-//        [self addGestureRecognizer:doubleTapGesture];
-//    }
-//    return self;
-//}
-//
-//-(void) didDoubleTap: (UITapGestureRecognizer *)recognizer {
-//    [self.delegate tappedUpvote:self.product];
-//}
+-(instancetype)initWithCoder:(NSCoder *)coder{
+    if(self = [super initWithCoder:coder]){
+        UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapForSegue:)];
+        [doubleTapGesture setNumberOfTapsRequired:2];
+        [self addGestureRecognizer:doubleTapGesture];
+    }
+    return self;
+}
 
-//- (void) didDoubleTap {
-//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
-//    tapGesture.numberOfTapsRequired = 2;
-//    [self.view addGestureRecognizer:tapGesture];
-//    [tapGesture release];
-//}
+-(void) doubleTapForSegue: (UITapGestureRecognizer *)recognizer {
+    
+    
+}
+
+
 
 - (IBAction)tappedUpvote:(UITapGestureRecognizer *)sender {
-    if (sender.state == UIGestureRecognizerStateRecognized) {
+    if (self.product.upvoted == NO) {
         //Ading UserID and ProductID to parse
         PFObject *newVote = [PFObject objectWithClassName:@"Vote"];
         newVote[@"ProductID"] = self.product.ID;
         newVote[@"UserID"] = PFUser.currentUser.objectId;
-        
+        [newVote saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            NSLog(@"%@",self.product.ID);
+            NSLog(@"%@", PFUser.currentUser.objectId);
+        }];
         
         self.product.upvoted = YES;
         self.product.upvoteCount += 1;
-        [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
+        [self.upvote setImage:[UIImage systemImageNamed:@"arrow.up.heart.fill"] forState:UIControlStateNormal];
         [self refreshData];
     }
     else{
         self.product.upvoted = NO;
         self.product.upvoteCount -= 1;
-        [self.upvote setImage:[UIImage imageNamed:@"arrow.up.heart"] forState:UIControlStateNormal];
+        [self.upvote setImage:[UIImage systemImageNamed:@"arrow.up.heart"] forState:UIControlStateNormal];
         [self refreshData];
     }
 }
 
 - (IBAction)tappedDownvote:(id)sender forEvent:(UIEvent *)event {
-    UITouch* touch = [[event allTouches] anyObject];
-       if (touch.tapCount == 2) {
+       if (self.product.downvoted == NO) {
            self.product.downvoted = YES;
            self.product.downvoteCount += 1;
-           [self.downvote setImage:[UIImage imageNamed:@"arrow.down.heart.fill"] forState:UIControlStateNormal];
+           [self.downvote setImage:[UIImage systemImageNamed:@"arrow.down.heart.fill"] forState:UIControlStateNormal];
            [self refreshData];
 
        }
        else{
            self.product.downvoted = NO;
            self.product.downvoteCount -= 1;
-           [self.downvote setImage:[UIImage imageNamed:@"arrow.down.heart"] forState:UIControlStateNormal];
+           [self.downvote setImage:[UIImage systemImageNamed:@"arrow.down.heart"] forState:UIControlStateNormal];
            [self refreshData];
        }
 }

@@ -31,6 +31,13 @@
     NSURL *url = [NSURL URLWithString:URLString];
     self.productImage.image = nil;
     [self.productImage setImageWithURL:url];
+    
+//    UIImageView* animatedImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    animatedImageView.animationImages = imagesArray;
+//    animatedImageView.animationDuration = 1.0f;
+//    animatedImageView.animationRepeatCount = 0;
+//    [animatedImageView startAnimating];
+//    [self.view addSubview: animatedImageView];
 }
 
 
