@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-DN-jCw">
-                                <rect key="frame" x="281" y="117" width="80" height="31"/>
+                                <rect key="frame" x="246" y="117" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="$$$"/>
@@ -91,17 +91,8 @@
                                     <action selector="threePriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="dPj-ZV-SHq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Lf-0kg">
-                                <rect key="frame" x="187" y="117" width="58" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="$$"/>
-                                <connections>
-                                    <action selector="twoPriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="1tr-Ne-fWT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-qh-zeH">
-                                <rect key="frame" x="140" y="117" width="33" height="31"/>
+                                <rect key="frame" x="105" y="117" width="33" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="$"/>
@@ -206,13 +197,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-VE-Xqm">
-                                <rect key="frame" x="17" y="117" width="99" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Lf-0kg">
+                                <rect key="frame" x="165" y="117" width="58" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                                <buttonConfiguration key="configuration" style="gray" title="$$"/>
                                 <connections>
-                                    <action selector="refreshTrending:" destination="4yT-jz-HVs" eventType="touchUpInside" id="vPg-CR-k75"/>
+                                    <action selector="twoPriceFilter:" destination="4yT-jz-HVs" eventType="touchUpInside" id="1tr-Ne-fWT"/>
                                 </connections>
                             </button>
                         </subviews>

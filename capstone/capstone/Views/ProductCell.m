@@ -29,13 +29,11 @@
     self.productName.text = self.product.Name;
     self.productBrand.text = self.product.Brand;
     self.productPrice.text = self.product.Price;
-    
-    
+    //set product image
     NSString *URLString = self.product.ImageURL;
     NSURL *url = [NSURL URLWithString:URLString];
     self.productImage.image = nil;
     [self.productImage setImageWithURL:url];
-    
     
     [self refreshData];
 }
@@ -47,7 +45,6 @@
     [self.upvote setTitle:upvoteString forState:UIControlStateNormal];
     [self.downvote setTitle:downvoteString forState:UIControlStateNormal];
 }
-
 
 
 -(instancetype)initWithCoder:(NSCoder *)coder{

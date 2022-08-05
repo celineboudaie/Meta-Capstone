@@ -60,7 +60,7 @@
 }
 
 - (IBAction)submitTapped:(id)sender {
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(waitBeforeSegue) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:0.8 target:self selector:@selector(waitBeforeSegue) userInfo:nil repeats:NO];
 }
 
 //Categories
