@@ -20,8 +20,8 @@ for category in reversed(categories):
   current_item_idx = 1
   for pageNum in range(0, MAX_PAGES):
     print(f"Looking at category {category} page {pageNum}")
-    r = requests.get(f"https://www.sephora.com/api/catalog/search?type=keyword&q={category}&pageSize=-1&currentPage={pageNum}", headers=headers)
-    responsejson = r.json()
+    sephoraData = requests.get(f"https://www.sephora.com/api/catalog/search?type=keyword&q={category}&pageSize=-1&currentPage={pageNum}", headers=headers)
+    responsejson = sephoraData.json()
     if len(responsejson["products"]) == 0:
       print("Page empty")
       break  # Stop iterating through pages
@@ -37,21 +37,21 @@ for category in reversed(categories):
         if len(query) > 0:
           p = query[0]
         else:
-          p = Product()
-        p.ID = product['productId']
-        p.Category = category
-        p.Name = product['productName']
-        p.Brand = product['brandName']
+          product = Product()
+        product.ID = product['productId']
+        product.Category = category
+        product.Name = product['productName']
+        product.Brand = product['brandName']
         ingredients = productjson['currentSku']['ingredientDesc']
         ingredients.replace("<br>", "")
         ingredients.replace("<b>", "")
         ingredients.replace("</b>", "")
         ingredients.replace("<p>", "")
         ingredients.replace("</p>", "")
-        p.Ingredients = ingredients
-        p.Price = product['currentSku']['listPrice']
-        p.SearchNum = current_item_idx
-        p.save()
+        product.Ingredients = ingredients
+        product.Price = product['currentSku']['listPrice']
+        product.SearchNum = current_item_idx
+        product.save()
         current_item_idx += 1
       except Exception as exc: 
         print(f"Error saving product {product['productId']}")
