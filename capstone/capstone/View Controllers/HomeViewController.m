@@ -98,6 +98,10 @@
 
 }
 
+//get current user location
+//find all upvotes with same location
+//display sorted upvotes
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
     cell.product = self.trendingResults[indexPath.row];
