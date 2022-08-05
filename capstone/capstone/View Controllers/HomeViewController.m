@@ -30,12 +30,19 @@
     [super viewDidLoad];
     self.trendingTableView.dataSource = self;
     self.trendingTableView.delegate = self;
-    
+}
 
-    [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
+
+- (IBAction)refreshTrending:(id)sender {
+    PFQuery *voteQuery = [PFQuery queryWithClassName:@"Vote"];
+    [voteQuery selectKeys:@[@"ProductID"]];
+    [voteQuery selectKeys:@[@"UserID"]];
+    __block NSArray *productsByPopularity;
+    NSMutableDictionary *voteCount = [[NSMutableDictionary alloc] init];
+
+    [voteQuery findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
         if (!error) {
             self.voteResults = objects;
-            NSMutableDictionary *voteCount = [[NSMutableDictionary alloc] init];
             for(id vote in self.voteResults){
                 NSLog(@"%@",vote);
                 if([voteCount objectForKey:vote[@"ProductID"]] != nil){
@@ -49,52 +56,56 @@
             }
             NSLog(@"%@",voteCount);
             NSArray *keys = [voteCount allKeys];
-            NSArray *sortedKeys = [keys sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+            productsByPopularity = [keys sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
                 NSString *first = [voteCount objectForKey:a];
                 NSString *second = [voteCount objectForKey:b];
                 return [second compare:first];
             }];
-            NSLog(@"%@",sortedKeys);
+            NSLog(@"%@",productsByPopularity);
+            PFQuery *productQuery = [PFQuery queryWithClassName:@"Product"];
+            [productQuery selectKeys:@[@"Name"]];
+            [productQuery selectKeys:@[@"Brand"]];
+            [productQuery selectKeys:@[@"Price"]];
+            [productQuery selectKeys:@[@"Ingredients"]];
+            [productQuery selectKeys:@[@"Category"]];
+            [productQuery selectKeys:@[@"ImageURL"]];
+            [productQuery selectKeys:@[@"ProductURL"]];
+            [productQuery selectKeys:@[@"ID"]];
+            [productQuery whereKey:@"ID" containedIn:productsByPopularity];
+
+            productQuery.limit = 2000;
+
+            [productQuery findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
+                if (!error) {
+                    self.trendingResults = [objects sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+                        NSString *first = [voteCount objectForKey:a[@"ID"]];
+                        NSString *second = [voteCount objectForKey:b[@"ID"]];
+                        return [second compare:first];
+                    }];
+
+                    NSLog(@"%@",self.trendingResults);
+
+                } else {
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
         }
         else {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-}
-- (IBAction)refreshTrending:(id)sender {
-    PFQuery *query = [PFQuery queryWithClassName:@"Product"];
-    [query selectKeys:@[@"Name"]];
-    [query selectKeys:@[@"Brand"]];
-    [query selectKeys:@[@"Price"]];
-    [query selectKeys:@[@"Ingredients"]];
-    [query selectKeys:@[@"Category"]];
-    [query selectKeys:@[@"ImageURL"]];
-    [query selectKeys:@[@"ProductURL"]];
-    [query selectKeys:@[@"ID"]];
-    query.limit = 2000;
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray<PFObject* > *objects, NSError *error) {
-        if (!error) {
-            self.trendingResults = objects;
-            NSLog(@"%@",self.trendingResults);
 
-        } else {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
-  self.trendingResults =  [[NSMutableArray alloc] init];
-    
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
-//    cell.product = self.sortedTrendingResults[indexPath.row];
-//    return cell;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return self.sortedTrendingResults.count;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
+    cell.product = self.sortedTrendingResults[indexPath.row];
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.sortedTrendingResults.count;
+}
 
 
 
