@@ -9,8 +9,12 @@
 #import "Product.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol ProductTableViewCellDelegate
+    - (void)didDoubleTap:(Product *)product;
 
+@end
 @interface ProductCell : UITableViewCell
+@property (nonatomic, weak) id<ProductTableViewCellDelegate> delegate;
 @property (strong, nonatomic) Product *product;
 @property (strong, nonatomic) IBOutlet UILabel *productName;
 @property (strong, nonatomic) IBOutlet UIImageView *productImage;

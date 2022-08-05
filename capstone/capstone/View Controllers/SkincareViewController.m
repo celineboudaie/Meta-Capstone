@@ -13,7 +13,7 @@
 #import "ProductDetailsViewController.h"
 #import "FiltersViewController.h"
 
-@interface SkincareViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface SkincareViewController () <ProductTableViewCellDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray<Product *> *productResults;
 
