@@ -18,7 +18,7 @@
 @property (strong, nonatomic) NSArray<Product *> *trendingResults;
 @property (strong, nonatomic) NSArray<Product *> *voteResults;
 @property (strong, nonatomic) IBOutlet UITableView *trendingTableView;
-@property (strong, nonatomic) NSArray<Product *> *sortedTrendingResults;
+@property (strong, nonatomic) NSArray<Product *> *trendingByLocation;
 
 
 
@@ -28,9 +28,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.trendingTableView.dataSource = self;
-//    self.trendingTableView.delegate = self;
-    
+    self.trendingTableView.dataSource = self;
+    self.trendingTableView.delegate = self;
+}
+
+
+- (IBAction)refreshTrending:(id)sender {
     PFQuery *voteQuery = [PFQuery queryWithClassName:@"Vote"];
     [voteQuery selectKeys:@[@"ProductID"]];
     [voteQuery selectKeys:@[@"UserID"]];
@@ -86,23 +89,27 @@
                     NSLog(@"Error: %@ %@", error, [error userInfo]);
                 }
             }];
+            self.trendingResults =  [[NSArray alloc] init];
         }
         else {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+
 }
 
-
+//get current user location
+//find all upvotes with same location
+//display sorted upvotes
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
-    cell.product = self.sortedTrendingResults[indexPath.row];
+    cell.product = self.trendingResults[indexPath.row];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.sortedTrendingResults.count;
+    return self.trendingResults.count;
 }
 
 
