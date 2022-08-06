@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSArray<Product *> *filteredProductResults;
 
 
-
 @end
 
 NS_ASSUME_NONNULL_END

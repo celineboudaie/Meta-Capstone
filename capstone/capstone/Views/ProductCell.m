@@ -56,10 +56,6 @@
     return self;
 }
 
--(void) doubleTapForSegue: (UITapGestureRecognizer *)recognizer {
-    
-    
-}
 
 
 
