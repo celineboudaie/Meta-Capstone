@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xcl-LE-WMR">
-                                <rect key="frame" x="0.0" y="168" width="414" height="728"/>
+                                <rect key="frame" x="0.0" y="168" width="414" height="658"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -125,34 +125,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pt-4v-I3C">
-                                                    <rect key="frame" x="171" y="155" width="134" height="28"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPu-Uj-1Qr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45.5" height="28"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title=""/>
-                                                            <connections>
-                                                                <action selector="tappedUpvote:" destination="UR0-lc-15f" eventType="touchUpInside" id="xoi-8c-Z6G"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cH-lI-SJT">
-                                                            <rect key="frame" x="45.5" y="0.0" width="45.5" height="28"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="arrow.down.heart" catalog="system" title=""/>
-                                                            <connections>
-                                                                <action selector="tappedDownvote:forEvent:" destination="UR0-lc-15f" eventType="touchUpInside" id="l1b-ae-j8S"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iu-Ah-lT7">
-                                                            <rect key="frame" x="91" y="0.0" width="43" height="28"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="tapBookmark:" destination="UR0-lc-15f" eventType="touchUpInside" id="35U-8m-UTl"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0pt-4v-I3C">
+                                                    <rect key="frame" x="171" y="155" width="43" height="28"/>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ji-Bq-MLf">
                                                     <rect key="frame" x="170" y="61" width="109.5" height="20.5"/>
@@ -186,19 +160,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bookmark" destination="9iu-Ah-lT7" id="q3S-Ib-g0H"/>
-                                            <outlet property="downvote" destination="0cH-lI-SJT" id="Kf3-ko-JN6"/>
                                             <outlet property="productBrand" destination="hoR-Rr-NdU" id="5B8-gg-tJf"/>
                                             <outlet property="productImage" destination="AJd-DK-wAi" id="c3j-oG-fDs"/>
                                             <outlet property="productName" destination="8Ji-Bq-MLf" id="h8F-hd-COQ"/>
                                             <outlet property="productPrice" destination="5ci-Ao-YBb" id="b8t-z5-2r4"/>
-                                            <outlet property="upvote" destination="QPu-Uj-1Qr" id="NsL-Wy-v1D"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66e-Lf-0kg">
-                                <rect key="frame" x="147" y="117" width="58" height="31"/>
+                                <rect key="frame" x="154" y="117" width="58" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="$$"/>
@@ -794,18 +765,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fragrance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aT-gD-Zmc">
-                                <rect key="frame" x="115" y="20" width="185" height="84"/>
+                                <rect key="frame" x="115" y="13" width="185" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Fragrance is not good for your skin because it causes sensitivity and acne" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FDl-S5-GXx">
-                                <rect key="frame" x="20" y="91" width="374" height="660"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FDl-S5-GXx">
+                                <rect key="frame" x="20" y="93" width="374" height="660"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93882567309999998" green="0.97394164800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">The way most fragrance ingredients impart scent is through a volatile reaction. Unfortunately, this natural reaction almost always causes a sensitizing reaction on skin. In fact, research has established that fragranced skin care products are among the most common causes of sensitizing, negative skin responses. This is true for all skin colors and types, not just those with sensitive or redness-prone skin.
+
+
+For a skin care product to be truly fragrance free the formula must not contain any volatile fragrance ingredients, including those of the synthetic or natural variety. Essential oils are no exception to this rule. While many essential oils and fragrant plant extracts can offer benefits in some capacity for skin, their volatility as they release their aroma also has a negative effect in other ways on skin.
+</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -832,12 +808,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Alcohol is not good for your skin because it causes sensitivity and acne" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ujn-gG-ZMT">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ujn-gG-ZMT">
                                 <rect key="frame" x="20" y="81" width="374" height="660"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93882567309999998" green="0.97394164800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">Alcohol in skincare harms your skin’s protective surface, depletes vital substances needed for healthy skin, and makes oily skin worse. To put it simply, it’s pro-ageing.
+
+A dermatological study conducted by the University of Toronto and the Departments of Clinical Pharmacology, Dermatology, and Medicine found that products with just 3% of alcohol (in the form of ethanol) resulted in more rapid skin cell death/aging by 26%.
+
+If you tend to have dry, sensitive, or rosacea-prone skin, you should stay away from skincare products with a high alcohol concentration. Since many toners are formulated with alcohol, you should opt for an alcohol-free option.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -885,10 +866,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="Yv1-NG-YQE" kind="relationship" relationship="viewControllers" id="Z4k-kK-ayh"/>
                         <segue destination="47b-2a-rIb" kind="relationship" relationship="viewControllers" id="wMa-Al-8bD"/>
                         <segue destination="aYi-gR-r4Z" kind="relationship" relationship="viewControllers" id="yaw-kf-aLv"/>
                         <segue destination="Kgb-eV-d2E" kind="relationship" relationship="viewControllers" id="RD1-Lo-v5E"/>
-                        <segue destination="Yv1-NG-YQE" kind="relationship" relationship="viewControllers" id="Z4k-kK-ayh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR7-ZC-QkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

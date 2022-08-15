@@ -26,6 +26,8 @@
     [PFUser.currentUser setValue:self.fullName.text forKey:@"fullName"];
     [PFUser.currentUser setValue:self.userLocation.text forKey:@"city"];
     [PFUser.currentUser save];
+    _fullName.text = nil;
+    _userLocation.text = nil;
 }
 
 
