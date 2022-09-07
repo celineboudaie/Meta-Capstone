@@ -7,8 +7,7 @@
 
 ## Overview
 ### Description
-SkinSweep was created for individuals to find clean products and filter out ingredients that are potentially causing harm to their body. The application is meant for users to learn more about the issues with certain ingredients in their products and find replacements for their favorite products. The homefeed displays users with trending products based on the upvotes and downvotes of other users. One page of the app will be dedicated to providing scientific research about why a certain ingredient is harmful to the body. Users are able to filter out ingredients after learning about their harm and their feed for a certain product type will be populated with the product with the most upvotes. Users can upvote, downvote, comment, and save products they are interested in purchasing or researching further. 
-
+SkinSweep is an app that was created for individuals to find clean skincare products and filter out ingredients that are potentially causing harm to their bodies. The application is meant for users to learn about the issues with certain ingredients in their products and find replacements for their favorite products. The home feed displays users with trending products based on the upvotes and downvotes of other users. One page of the app will be dedicated to providing scientific research about why a certain ingredient is harmful to the body. Users are able to filter out ingredients after learning about their harm and their feed for a certain product type will be populated with the product with the most upvotes. Users can upvote, downvote, comment, and save products they are interested in purchasing or researching further.
 ### App Evaluation
 - **Category:Lifestyle/Wellness**
 - **Mobile: iOS focused**
